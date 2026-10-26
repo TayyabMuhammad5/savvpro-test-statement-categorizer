@@ -1,4 +1,4 @@
-export type TransactionType = 'expense' | 'refund' | 'income' | 'transfer' | 'duplicate';
+export type TransactionType = 'expense' | 'refund' | 'income' | 'transfer' | 'duplicate' | 'excluded';
 
 export type TaxFlag =
   | 'NONE'
@@ -16,6 +16,11 @@ export interface DecisionSignal {
   weight: number;
 }
 
+export interface AlternativeReason {
+  category: string;
+  reason: string;
+}
+
 export interface CategorizedTransaction {
   id: string;
   row_index: number;
@@ -26,6 +31,7 @@ export interface CategorizedTransaction {
   abs_amount: number;
   category: string;
   suggested_categories: string[];
+  alternative_reasons?: AlternativeReason[];
   transaction_type: TransactionType;
   confidence: number;
   needs_review: boolean;
@@ -38,6 +44,7 @@ export interface CategorizedTransaction {
   deductible_rate: number;
   deductible_impact: number;
   user_overridden: boolean;
+  bank_category?: string | null;
 }
 
 export interface CategorySummary {
@@ -65,9 +72,13 @@ export interface StatementAnalysisResponse {
   total_refund_offsets: number;
   net_expenses: number;
   estimated_deductible_total: number;
+  amount_in_review?: number;
+  provisional_spending?: boolean;
   category_summaries: CategorySummary[];
   transactions: CategorizedTransaction[];
   parse_warnings: string[];
+  sign_convention?: string;
+  tax_disclaimer?: string;
 }
 
 export interface SamplePreset {
@@ -76,4 +87,17 @@ export interface SamplePreset {
   filename: string;
   description: string;
   csv: string;
+}
+
+export interface RowDecision {
+  action?: 'keep' | 'exclude' | 'categorize';
+  category?: string;
+  transaction_type?: string;
+  confirm_income_on_outflow?: boolean;
+}
+
+export interface APIError {
+  code: string;
+  message: string;
+  details?: any;
 }

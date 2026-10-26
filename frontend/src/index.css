@@ -1,3 +1,94 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --canvas: #F3EFE6;
+    --ink: #141311;
+    --ink-soft: #635E54;
+    --ink-faint: #9C9588;
+    --hairline: rgba(20, 19, 17, 0.11);
+    --kodak-orange: #FF4F17;
+    --leica-green: #12734C;
+  }
+
+  body {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    background-color: var(--canvas);
+    color: var(--ink);
+    background-image:
+      radial-gradient(circle at 12% 8%, rgba(255, 79, 23, 0.055), transparent 36%),
+      radial-gradient(circle at 88% 18%, rgba(18, 115, 76, 0.045), transparent 40%);
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseBeacon {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.55;
+  }
+}
+
+.animate-stage {
+  animation: fadeSlideUp 0.36s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.ledger-row {
+  border-bottom: 1px solid rgba(20, 19, 17, 0.11);
+  transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.2s ease;
+  animation: fadeSlideUp 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.ledger-row:hover {
+  transform: translateX(6px);
+  background: linear-gradient(90deg, rgba(255, 79, 23, 0.055) 0%, rgba(255, 255, 255, 0) 85%);
+}
+
+.magnetic-pill {
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.18s ease, color 0.18s ease, box-shadow 0.2s ease;
+}
+
+.magnetic-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px -4px rgba(20, 19, 17, 0.14);
+}
+
+.magnetic-pill:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.beacon-dot {
+  animation: pulseBeacon 2s infinite ease-in-out;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(20, 19, 17, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(20, 19, 17, 0.3);
+}

@@ -66,6 +66,73 @@ MERCURY_STUDIO_CHECKING_CSV = """Date,Description,Debit,Credit,Status,Reference
 2025-05-25,ATM WITHDRAWAL CHASE 11201,160.00,,Posted,Cash withdrawal before flea market prop hunt
 """
 
+EUROPEAN_SEMICOLON_DECIMAL_COMMA_CSV = """Date;Description;Montant;Type;Notes
+15/06/2025;HAHNEMUEHLE FINEART GMBH EINBECK;-485,50 €;Debit;Archival cotton rag photo paper roll 44in
+18/06/2025;LEICA STORE BERLIN DE;-2.850,00 €;Debit;Leica Q3 Monochrom lens filter & spare BP-SCL6 batteries
+20/06/2025;WHITEWALL MEDIA BERLIN LAB;-890,25 €;Debit;UltraHD acrylic gallery print proofs for Paris exhibition
+22/06/2025;CAPTURE ONE COPENHAGEN DK;-24,00 €;Debit;Studio tethered shooting monthly license
+24/06/2025;BLURB NETHERLANDS BV;-1.420,50 €;Debit;Monograph EU distribution print run
+25/06/2025;BLURB NETHERLANDS DEFECT CREDIT;180,00 €;Credit;Defect adjustment for damaged corners in transit
+26/06/2025;SNCF VOYAGES PARIS;-145,00 €;Debit;TGV train tickets to Arles Photography Festival
+27/06/2025;CAFE DE FLORE PARIS;-38,50 €;Debit;Morning espresso and croissant meeting
+28/06/2025;VIREMENT SEPA CLIENT RETAINER;3.500,00 €;Credit;Editorial project advance from Paris fashion magazine
+30/06/2025;FRAIS BANCAIRES ET COMMISSIONS;-18,20 €;Debit;International wire settlement and currency fee
+"""
+
+INCOME_HEAVY_COMMERCIAL_CHECKING_CSV = """Date,Description,Amount,Memo
+2025-07-01,HONEYBOOK*CLIENT PAYOUT - CAMPAIGN RETAINER,6500.00,Commercial Autumn Lookbook Shoot Deposit
+2025-07-03,PIXIESET*PRINT STORE DIRECT DEPOSIT,1820.00,Limited Edition Monograph Collector Print Sales
+2025-07-05,BLURB*AUTHOR ROYALTY DISTRIB,745.50,Q2 Book Fair and Trade Distribution Royalties
+2025-07-07,WIRED INCOMING CLIENT ADVANCE - VOGUE,4200.00,Editorial Portrait Assignment Retainer
+2025-07-10,DOMESTIC INCOMING WIRE FEE,-15.00,Bank processing charge on incoming wire
+2025-07-12,CLIENT SHOOT DIRECT DEPOSIT #9921,3100.00,Final balance payment on architecture monograph
+2025-07-15,ONLINE TRANSFER TO STUDIO SAVINGS,-4000.00,Quarterly estimated tax reserve allocation
+2025-07-18,HONEYBOOK*CLIENT PAYOUT - WORKSHOP REGISTRATIONS,2400.00,12x Weekend Darkroom Masterclass Enrollments
+2025-07-20,MERCHANT PROCESSING SETTLEMENT FEE,-82.40,Credit card merchant batch settlement fee
+2025-07-25,OWNER DRAW TRANSFER TO PERSONAL CHECKING,-5000.00,Monthly sole proprietorship partner distribution
+2025-07-28,MAGAZINE EDITORIAL LICENSING FEE,1250.00,Cover photograph reprint licensing agreement
+2025-07-31,ACCOUNT MAINTENANCE SERVICE CHARGE,-25.00,Monthly commercial business checking service fee
+"""
+
+QUOTED_MULTILINE_PREAMBLE_CSV = """ACME COMMERCIAL BANK -- APERTURE & SPINE STUDIO ACCOUNT
+Statement Number: 9940129-2025
+Generated On: 2025-08-31 23:59:59 EST
+Confidential -- For Authorized Signer Only
+Date,Description,Amount,Category,Extended Notes
+2025-08-02,"B&H PHOTO-VIDEO-PRO AUDIO
+NEW YORK, NY 10001
+ORDER #10492819",-2850.00,Equipment,"Sony Alpha a7R V Mirrorless Camera Body
+Includes 2x 128GB CFexpress Type A Cards
+Invoice #994102-BH"
+2025-08-05,"LENSRENTALS.COM
+901-754-9100 TN",-420.00,Rentals,"Hasselblad XCD 55mm f/2.5 Lens
+Shoot Location: Hudson Valley
+Rental Period: Aug 6 - Aug 10"
+2025-08-08,"BLURB *BOOK PRINTING
+PRINT RUN MONOGRAPH #3",-1850.00,Printing,"100x Hardcover Linen Cloth Photobooks
+80# Mohawk ProPhoto Pearl Paper
+Matte Dust Jacket Edition"
+2025-08-10,"INDIE FILM LAB
+MONTGOMERY, AL",-340.00,Lab,"20x 120 Portra 400 Dev & High-Res Noritsu Scan
+Batch #2025-08-09
+Job: Upstate Landscape Series"
+2025-08-15,"PEERSPACE *NATURAL LIGHT LOFT
+BROOKLYN, NY",-550.00,Studio,"Full Day Studio Booking (8 hrs)
+Includes 9ft Seamless Paper Backdrop Support"
+2025-08-18,"EZCATER*CREW LUNCH & COFFEE
+BROOKLYN, NY",-195.00,Meals,"Catering for 5 crew members
+Sandwich platter + cold brew
+Editorial Author Book Jacket Shoot"
+2025-08-20,"UNKNOWN DELI & MARKET
+BROOKLYN, NY",-24.50,Personal,"Coffee and snacks
+No itemized business receipt attached"
+2025-08-25,"USPS PO 350892
+BROOKLYN, NY",-142.50,Shipping,"Priority Mail shipping for photobook monographs
+Postage label batch #882190"
+2025-08-28,"ONLINE TRANSFER TO SAVINGS
+ACCOUNT ENDING 4910",-2500.00,Transfer,"Tax reserve transfer for Q3 estimated taxes"
+"""
+
 SAMPLE_STATEMENTS: Dict[str, Dict[str, str]] = {
     "chase_studio_card": {
         "id": "chase_studio_card",
@@ -87,5 +154,26 @@ SAMPLE_STATEMENTS: Dict[str, Dict[str, str]] = {
         "filename": "mercury_studio_checking_2025.csv",
         "description": "13 rows with separate Debit/Credit columns: HoneyBook client shoot payouts, Pixieset & Blurb book royalties, Edition One Books bindery, Brooklyn Darkroom, B&H tax refund credit, Owner Draw, Transfer to Savings, plus unverified Check Deposit & ATM cash traps.",
         "csv": MERCURY_STUDIO_CHECKING_CSV.strip(),
+    },
+    "european_semicolon_decimal_comma": {
+        "id": "european_semicolon_decimal_comma",
+        "name": "European Semicolon & Decimal Comma Statement (EUR)",
+        "filename": "european_semicolon_decimal_comma.csv",
+        "description": "10 rows: Semicolon delimiter (;), decimal comma currency (€), DD/MM/YYYY dates: Hahnemühle paper, Leica Store Berlin, WhiteWall exhibition prints, Blurb EU + defect refund, TGV travel, and SEPA client retainer.",
+        "csv": EUROPEAN_SEMICOLON_DECIMAL_COMMA_CSV.strip(),
+    },
+    "income_heavy_commercial_checking": {
+        "id": "income_heavy_commercial_checking",
+        "name": "Income-Heavy Commercial Checking (No Inversion Guard)",
+        "filename": "income_heavy_commercial_checking.csv",
+        "description": "12 rows: High studio client deposits ($6,500 HoneyBook, $4,200 Vogue wire, Pixieset store), wire processing fees, quarterly tax transfer, and owner distribution, validating zero-guessing non-inversion.",
+        "csv": INCOME_HEAVY_COMMERCIAL_CHECKING_CSV.strip(),
+    },
+    "quoted_multiline_preamble": {
+        "id": "quoted_multiline_preamble",
+        "name": "Quoted Multiline & Preamble Statement",
+        "filename": "quoted_multiline_preamble.csv",
+        "description": "9 rows: Bank metadata preamble headers, multi-line quoted merchant descriptions and itemized memos: Sony Alpha a7R V body, Hasselblad rental, Blurb photobook run, Indie Film Lab, and PeerSpace.",
+        "csv": QUOTED_MULTILINE_PREAMBLE_CSV.strip(),
     },
 }

@@ -1,0 +1,128 @@
+- trap_id: TRAP_AMAZON_MARKETPLACE
+  pattern: "\\b(AMAZON|AMZN\\s*MKTP|AMZN\\.COM)\\b"
+  max_confidence: 0.38
+  reason: "Amazon Marketplace is a multi-category retailer: could be camera accessories (SD cards/gaffer tape), shipping mailers, reference books, or personal household items. Check order invoice."
+  suggested_categories:
+    - Camera Equipment & Lighting
+    - Shipping & Book Fulfillment
+    - Props, Styling & Reference Books
+    - Personal / Non-Deductible
+  tax_flag: OPAQUE_MERCHANT
+  positive_examples:
+    - AMAZON.COM*MKTPL 8821WA
+    - AMZN MKTP US SEATTLE WA
+  negative_examples:
+    - B&H PHOTO NYC
+    - BLURB PRINT RUN
+
+- trap_id: TRAP_BIG_BOX_RETAIL
+  pattern: "\\b(TARGET|WALMART|COSTCO|BEST\\s*BUY|APPLE\\.COM/BILL|APPLE\\s*STORE|IKEA)\\b"
+  max_confidence: 0.40
+  reason: "Mixed business/personal retailer — statement line does not specify whether purchase was studio hardware/props or personal goods."
+  suggested_categories:
+    - Camera Equipment & Lighting
+    - Props, Styling & Reference Books
+    - Software & Digital Workflow
+    - Personal / Non-Deductible
+  tax_flag: OPAQUE_MERCHANT
+  positive_examples:
+    - TARGET T-0982 BROOKLYN NY
+    - BEST BUY 000492 SAN JOSE CA
+  negative_examples:
+    - LENSRENTALS MEMPHIS
+    - ADOBE SYSTEMS INC
+
+- trap_id: TRAP_P2P_PAYMENT
+  pattern: "\\b(VENMO|PAYPAL\\s*\\*|ZELLE(?!\\s*TO\\s*SELF)|CASH\\s*APP)\\b"
+  max_confidence: 0.35
+  reason: "Peer-to-peer transfer lacks a vendor invoice description — could be a second-shooter/stylist contractor, used lens purchase, or personal split."
+  suggested_categories:
+    - Contract Labor & Assistants
+    - Studio, Darkroom & Permits
+    - Props, Styling & Reference Books
+    - Personal / Non-Deductible
+  tax_flag: OPAQUE_MERCHANT
+  positive_examples:
+    - VENMO *MARCUS VANCE
+    - PAYPAL *SAMUELPHOTO
+  negative_examples:
+    - ZELLE TO SELF
+    - STRIPE TRANSFER
+
+- trap_id: TRAP_LOCAL_CAFE_DINING
+  pattern: "\\b(CAFE|COFFEE|ESPRESSO|ROASTERS|BAKERY|STARBUCKS|BLUE\\s*BOTTLE|JOES\\s*CAFE|BISTRO|TAVERN|BAR\\s*&\\s*GRILL|PIZZA|SUSHI|CHIPOTLE|SWEETGREEN(?!\\s*CATERING)|TST\\*|SQ\\s*\\*)\\b"
+  max_confidence: 0.45
+  reason: "Food/beverage charge lacks client or shoot crew context. Solo meals/coffee in your home city are non-deductible; client project meetings or on-set crew meals are 50% deductible."
+  suggested_categories:
+    - Client & Crew Meals (50%)
+    - Shoot Travel & Transport
+    - Personal / Non-Deductible
+  tax_flag: OPAQUE_MERCHANT
+  positive_examples:
+    - JOES CAFE 9921 BROOKLYN NY
+    - STARBUCKS STORE 10482 NY
+  negative_examples:
+    - EZCATER*SHOOT CREW LUNCH
+    - SWEETGREEN CATERING
+
+- trap_id: TRAP_ATM_CASH
+  pattern: "\\b(ATM\\s*WITHDRAWAL|CASH\\s*WITHDRAWAL|NON-CHASE\\s*ATM)\\b"
+  max_confidence: 0.25
+  reason: "Unreceipted ATM cash withdrawal — requires itemized paper receipts (e.g., on-set tips or prop market cash) to be deductible."
+  suggested_categories:
+    - Props, Styling & Reference Books
+    - Shoot Travel & Transport
+    - Personal / Non-Deductible
+  tax_flag: OPAQUE_MERCHANT
+  positive_examples:
+    - ATM WITHDRAWAL 8482 CHASE
+    - CASH WITHDRAWAL BRANCH 01
+  negative_examples:
+    - MERCURY WIRE TRANSFER FEE
+    - STRIPE PAYOUT
+
+- trap_id: TRAP_STREAMING_MEDIA
+  pattern: "\\b(SPOTIFY|NETFLIX|HULU|HBO\\s*MAX|DISNEY\\s*PLUS|DISNEY\\+|APPLE\\s*MUSIC|PARAMOUNT\\s*PLUS|PARAMOUNT\\+)\\b"
+  max_confidence: 0.35
+  reason: "Streaming entertainment service — presumptively personal non-deductible expense unless documented for studio client background audio under commercial license."
+  suggested_categories:
+    - Personal / Non-Deductible
+    - Software & Digital Workflow
+  tax_flag: OPAQUE_MERCHANT
+  positive_examples:
+    - SPOTIFY USA MONTHLY
+    - NETFLIX.COM SUBSCRIPTION
+  negative_examples:
+    - ADOBE CREATIVE CLOUD
+    - FRAME.IO PRO PLAN
+
+- trap_id: TRAP_GROCERY_STORES
+  pattern: "\\b(TRADER\\s*JOE'?S|SAFEWAY|KROGER|WHOLEFDS|WHOLE\\s*FOODS(?!\\s*CATERING)|WEGMANS|ALDI|HEB\\s*GROCERY|PUBLIX)\\b"
+  max_confidence: 0.42
+  reason: "In-store supermarket purchase — personal groceries unless itemized receipt proves shoot craft services or food styling props."
+  suggested_categories:
+    - Client & Crew Meals (50%)
+    - Props, Styling & Reference Books
+    - Personal / Non-Deductible
+  tax_flag: OPAQUE_MERCHANT
+  positive_examples:
+    - TRADER JOE'S #542 BROOKLYN NY
+    - SAFEWAY STORE 1204 SEATTLE WA
+  negative_examples:
+    - WHOLE FOODS CATERING
+    - INDIE FILM LAB
+
+- trap_id: TRAP_GAS_STATIONS
+  pattern: "\\b(SHELL\\s*OIL|CHEVRON|EXXONMOBIL|EXXON|MOBIL(?!\\s*PAPER)|BP\\s*CONNECT|SPEEDWAY|7-ELEVEN|SUNOCO|CIRCLE\\s*K|VALERO|TEXACO|WAWA)\\b"
+  max_confidence: 0.45
+  reason: "Gas/fuel purchase — requires review: business vehicle travel must choose between IRS standard mileage rate (67¢/mi for 2024, 70¢/mi for 2025) and actual expense deduction. Cannot claim both."
+  suggested_categories:
+    - Shoot Travel & Transport
+    - Personal / Non-Deductible
+  tax_flag: OPAQUE_MERCHANT
+  positive_examples:
+    - CHEVRON 0092144 LOS ANGELES CA
+    - SHELL OIL 12849301 SAN JOSE CA
+  negative_examples:
+    - DELTA AIR LINES
+    - UBER TRIP

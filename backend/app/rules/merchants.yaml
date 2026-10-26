@@ -1,0 +1,4027 @@
+- rule_id: GEAR_CANON
+  pattern: \b(CANON\s*(?:USA|STORE|DIRECT|PROFESSIONAL))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Professional Canon cameras, RF lenses, and cinema bodies.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CANON USA ONLINE STORE
+  - CANON PROFESSIONAL SERVICES
+  negative_examples:
+  - CANYON BIKES
+  - COFFEE SHOP
+- rule_id: GEAR_SONY
+  pattern: \b(SONY\s*(?:PRO|CAMERA|DIRECT|ELECTRONICS))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Sony Alpha mirrorless bodies, G-Master lenses, and accessories.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SONY PRO DIRECT STORE
+  - SONY CAMERA SALES
+  negative_examples:
+  - SONIC DRIVE IN
+  - STARBUCKS
+- rule_id: GEAR_NIKON
+  pattern: \b(NIKON\s*(?:INC|STORE|USA|DIRECT))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Nikon Z-mount mirrorless cameras, Nikkor lenses, and optics.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - NIKON INC ONLINE
+  - NIKON USA STORE
+  negative_examples:
+  - NIKE OUTLET
+  - UBER TRIP
+- rule_id: GEAR_FUJIFILM
+  pattern: \b(FUJIFILM|FUJI\s*PHOTO|FUJINON)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Fujifilm X-series and GFX medium format camera gear.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - FUJIFILM NORTH AMERICA
+  - FUJINON LENS STORE
+  negative_examples:
+  - FUJI SUSHI BAR
+  - DELTA FLIGHT
+- rule_id: GEAR_HASSELBLAD
+  pattern: \b(HASSELBLAD)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.96
+  explanation: Hasselblad medium format digital cameras and lenses.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - HASSELBLAD USA NJ
+  - HASSELBLAD SERVICE CENTER
+  negative_examples:
+  - APPLE STORE
+  - BLURB BOOKS
+- rule_id: GEAR_LEICA
+  pattern: \b(LEICA\s*(?:CAMERA|STORE|BOUTIQUE))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.96
+  explanation: Leica M and SL system rangefinders and precision optics.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - LEICA STORE NYC SOHO
+  - LEICA CAMERA BOUTIQUE
+  negative_examples:
+  - LENSRENTALS COM
+  - HOTEL ROOM
+- rule_id: GEAR_PANASONIC
+  pattern: \b(PANASONIC\s*(?:LUMIX|PRO))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: Panasonic Lumix full-frame camera gear and accessories.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PANASONIC LUMIX STORE
+  - PANASONIC PRO VIDEO
+  negative_examples:
+  - PANERA BREAD
+  - PIRATE SHIP
+- rule_id: GEAR_PHASE_ONE
+  pattern: \b(PHASE\s*ONE\s*(?:A/S|US|CAMERA))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.96
+  explanation: Phase One high-resolution medium format digital backs.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PHASE ONE US HARDWARE
+  - PHASE ONE CAMERA SALES
+  negative_examples:
+  - PHASE THREE CAFE
+  - USPS PO
+- rule_id: GEAR_MAMIYA
+  pattern: \b(MAMIYA\s*(?:LEAF|AMERICA|PARTS))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.93
+  explanation: Mamiya medium format film cameras and repair parts.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MAMIYA LEAF SERVICE
+  - MAMIYA AMERICA PARTS
+  negative_examples:
+  - MAMA MIA PIZZA
+  - LYFT RIDE
+- rule_id: GEAR_OLYMPUS
+  pattern: \b(OM\s*SYSTEM|OLYMPUS\s*CAMERA)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.93
+  explanation: OM System / Olympus micro four-thirds cameras and macro lenses.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - OM SYSTEM PRO STORE
+  - OLYMPUS CAMERA REPAIR
+  negative_examples:
+  - OLYMPIC MOTEL
+  - AMAZON MKT
+- rule_id: GEAR_PENTAX
+  pattern: \b(PENTAX\s*(?:RICOH|CAMERA))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.93
+  explanation: Pentax and Ricoh digital cameras, GR street cameras, and lenses.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PENTAX RICOH IMAGING
+  - PENTAX CAMERA STORE
+  negative_examples:
+  - PENTAGON PARKING
+  - NETFLIX
+- rule_id: GEAR_SIGMA
+  pattern: \b(SIGMA\s*(?:CORP|PHOTO|LENS|AMERICA))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Sigma Art prime and zoom lenses for studio shooting.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SIGMA PHOTO USA
+  - SIGMA CORP LENS SALES
+  negative_examples:
+  - SIGMA DELTA PI
+  - UBER EATS
+- rule_id: GEAR_TAMRON
+  pattern: \b(TAMRON\s*(?:USA|LENS|AMERICA))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: Tamron zoom and macro lenses for mirrorless cameras.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - TAMRON USA DIRECT
+  - TAMRON LENS SERVICE
+  negative_examples:
+  - TARGET STORE
+  - SWEETGREEN
+- rule_id: GEAR_TOKINA
+  pattern: \b(TOKINA\s*(?:USA|CINEMA|LENS))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: Tokina cinema and photographic lenses.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - TOKINA CINEMA USA
+  - TOKINA LENS DIRECT
+  negative_examples:
+  - TOKYO DINER
+  - SPOTIFY
+- rule_id: GEAR_VOIGTLANDER
+  pattern: \b(VOIGTLANDER|COSINA\s*VOIGTLANDER)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Voigtlander manual focus prime lenses.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - VOIGTLANDER USA SALES
+  - COSINA VOIGTLANDER LENS
+  negative_examples:
+  - VOLVO SERVICE
+  - CHEVRON GAS
+- rule_id: GEAR_ZEISS
+  pattern: \b(ZEISS\s*(?:CINEMA|LENS|OPTICS|PHOTOGRAPHY))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Carl Zeiss high-end manual focus and cinema lenses.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ZEISS PHOTOGRAPHY LENSES
+  - ZEISS OPTICS DIRECT
+  negative_examples:
+  - PIZZA HUT
+  - HERTZ RENT
+- rule_id: GEAR_PROFOTO
+  pattern: \b(PROFOTO)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.96
+  explanation: Profoto studio strobes, battery packs, and light shaping tools.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PROFOTO USA COMMERCE
+  - PROFOTO LIGHTING NYC
+  negative_examples:
+  - PRO FOOTBALL
+  - PROVENCE CAFE
+- rule_id: GEAR_GODOX
+  pattern: \b(GODOX\s*(?:PHOTO|LIGHTING|STROBE|FLASH))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Godox studio monolights, triggers, and softboxes.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - GODOX PHOTO EQUIPMENT
+  - GODOX LIGHTING DIRECT
+  negative_examples:
+  - GODIVA CHOCOLATE
+  - GO DADDY
+- rule_id: GEAR_APUTURE
+  pattern: \b(APUTURE\s*(?:LIGHTING|DIRECT|TECH))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Aputure continuous LED lighting fixtures and modifiers.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - APUTURE LIGHTING STORE
+  - APUTURE DIRECT SALES
+  negative_examples:
+  - APP STORE
+  - AIRBNB
+- rule_id: GEAR_NANLITE
+  pattern: \b(NANLITE|NANLUX)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Nanlite and Nanlux studio LED spotlights and tubes.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - NANLITE USA DIRECT
+  - NANLUX STUDIO LIGHT
+  negative_examples:
+  - NANNYS CAFE
+  - USPS POSTAGE
+- rule_id: GEAR_ELINCHROM
+  pattern: \b(ELINCHROM)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Elinchrom studio flashes, rotalux softboxes, and transmitters.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ELINCHROM USA DISTRIB
+  - ELINCHROM STUDIO FLASH
+  negative_examples:
+  - ELECTRONIC ARTS
+  - EASYJET
+- rule_id: GEAR_BRONCOLOR
+  pattern: \b(BRONCOLOR)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.96
+  explanation: Broncolor high-end studio lighting generators and paras.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - BRONCOLOR USA SALES
+  - BRONCOLOR SERVICE NJ
+  negative_examples:
+  - BRONX ZOO
+  - BROWN SUGAR
+- rule_id: GEAR_WESTCOTT
+  pattern: \b(WESTCOTT\s*(?:LIGHTING|PHOTO|FJ))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: FJ Westcott lighting umbrellas, Apollo softboxes, and reflectors.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - WESTCOTT LIGHTING DIRECT
+  - WESTCOTT PHOTO PRODUCTS
+  negative_examples:
+  - WEST END CAFE
+  - WESTERN UNION
+- rule_id: GEAR_FLASHPOINT
+  pattern: \b(FLASHPOINT\s*(?:LIGHTING|EXPLOR|XPLOR))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: Flashpoint studio strobes and wireless triggers.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - FLASHPOINT EXPLOR 600
+  - FLASHPOINT LIGHTING SALES
+  negative_examples:
+  - FLASH MOB NYC
+  - POINT REYES
+- rule_id: GEAR_BOWENS
+  pattern: \b(BOWENS\s*(?:LIGHTING|STROBE))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.93
+  explanation: Bowens studio lighting heads and mount accessories.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - BOWENS LIGHTING UK
+  - BOWENS STROBE SYSTEM
+  negative_examples:
+  - BOWLING ALLEY
+  - BOWEN ISLAND
+- rule_id: GEAR_ALIENBEES
+  pattern: \b(PAUL\s*C\s*BUFF|ALIENBEES|WHITE\s*LIGHTNING\s*STROBE)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: Paul C. Buff studio flash units, Einstein, and CyberSyncs.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PAUL C BUFF INC
+  - ALIENBEES B800 STROBE
+  negative_examples:
+  - BUFFALO WILD WINGS
+  - WHITE CASTLE
+- rule_id: GEAR_MANFROTTO
+  pattern: \b(MANFROTTO)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Manfrotto camera tripods, light stands, and studio clamps.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MANFROTTO DISTRIBUTION
+  - MANFROTTO TRIPOD STORE
+  negative_examples:
+  - MANHATTAN BAGEL
+  - MTA SUBWAY
+- rule_id: GEAR_GITZO
+  pattern: \b(GITZO)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.96
+  explanation: Gitzo carbon fiber professional tripod legs and ball heads.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - GITZO TRIPODS USA
+  - GITZO HEADS DIRECT
+  negative_examples:
+  - GIZMODO MEDIA
+  - GOOGLE ADS
+- rule_id: GEAR_RRS
+  pattern: \b(REALLY\s*RIGHT\s*STUFF|RRS\s*SOAR)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.96
+  explanation: Really Right Stuff L-brackets, plates, and gimbal heads.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - REALLY RIGHT STUFF LLC
+  - RRS SOAR TRIPOD
+  negative_examples:
+  - RIGHT CHOICE DINER
+  - STUFF MAGAZINE
+- rule_id: GEAR_SMALLRIG
+  pattern: \b(SMALLRIG)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: SmallRig camera cages, matte boxes, and mounting hardware.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SMALLRIG ONLINE STORE
+  - SMALLRIG DIRECT TECH
+  negative_examples:
+  - SMALL TAVERN
+  - RIGATONI
+- rule_id: GEAR_TILTA
+  pattern: \b(TILTA\s*(?:INC|STORE|CAMERA))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: Tilta motorized follow focus systems and camera cages.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - TILTA INC CAMERA ACCESS
+  - TILTA STORE BURBANK
+  negative_examples:
+  - TILT CAFE
+  - DELTA FLIGHT
+- rule_id: GEAR_PEAK_DESIGN
+  pattern: \b(PEAK\s*DESIGN)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Peak Design camera straps, clips, and travel tripod gear.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PEAK DESIGN SAN FRANCISCO
+  - PEAK DESIGN ONLINE
+  negative_examples:
+  - PIKES PEAK MOTEL
+  - DESIGNER SHOES
+- rule_id: GEAR_ZHIYUN
+  pattern: \b(ZHIYUN\s*(?:TECH|GIMBAL|STORE))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: Zhiyun Crane motorized gimbals and stabilizers.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ZHIYUN TECH GIMBALS
+  - ZHIYUN STORE ONLINE
+  negative_examples:
+  - ZHOU DINER
+  - LYFT RIDE
+- rule_id: GEAR_DJI
+  pattern: \b(DJI\s*(?:OFFICIAL|STORE|DIRECT|RONIN))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: DJI Ronin camera stabilizers, wireless video, and drones.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - DJI OFFICIAL STORE
+  - DJI RONIN GIMBAL
+  negative_examples:
+  - DOW JONES INC
+  - JOE COFFEE
+- rule_id: GEAR_RODE
+  pattern: \b(RODE\s*(?:MICROPHONES|DIRECT|AUDIO))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: Rode on-camera shotgun mics and wireless audio systems.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - RODE MICROPHONES USA
+  - RODE DIRECT AUDIO
+  negative_examples:
+  - ROAD RUNNER GAS
+  - RODEO DRIVE
+- rule_id: GEAR_SENNHEISER
+  pattern: \b(SENNHEISER\s*(?:AUDIO|PRO|PRO-AUDIO))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: Sennheiser wireless lavalier kits and shotgun mics.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SENNHEISER PRO AUDIO
+  - SENNHEISER PRO USA
+  negative_examples:
+  - SENECA LODGE
+  - SEARS STORE
+- rule_id: GEAR_ATOMOS
+  pattern: \b(ATOMOS\s*(?:NINJA|PRO|GLOBAL))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Atomos Ninja on-camera HDR monitors and ProRes recorders.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ATOMOS NINJA V MONITOR
+  - ATOMOS GLOBAL DIRECT
+  negative_examples:
+  - ATOMIC CAFE
+  - AUTOPAY CHASE
+- rule_id: GEAR_BLACKMAGIC
+  pattern: \b(BLACKMAGIC\s*(?:DESIGN|CINEMA))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Blackmagic Design cinema cameras, DaVinci panels, and converters.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - BLACKMAGIC DESIGN INC
+  - BLACKMAGIC CINEMA SALES
+  negative_examples:
+  - MAGIC CARPET
+  - BLACK FOREST INN
+- rule_id: GEAR_RED_CINEMA
+  pattern: \b(RED\s*DIGITAL\s*CINEMA|RED\.COM\s*CAMERAS)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.96
+  explanation: RED Digital Cinema cameras, media, and DSMC accessories.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - RED DIGITAL CINEMA CA
+  - RED.COM CAMERAS HOLLYWOOD
+  negative_examples:
+  - RED LOBSTER
+  - RED ROOSTER CAFE
+- rule_id: GEAR_ARRI
+  pattern: \b(ARRI\s*(?:INC|CAMERA|LIGHTING|RENTAL))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.96
+  explanation: ARRI cinema cameras, master prime lenses, and SkyPanels.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ARRI INC BURBANK CA
+  - ARRI LIGHTING SYSTEMS
+  negative_examples:
+  - ARRIVALS CAFE
+  - MARRIOTT HOTEL
+- rule_id: GEAR_PELICAN
+  pattern: \b(PELICAN\s*CASES|PELICAN\.COM|PELICAN\s*PRODUCTS)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Pelican watertight protective cases for photo equipment transit.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PELICAN PRODUCTS INC
+  - PELICAN CASES ONLINE
+  negative_examples:
+  - PELICAN INN LODGING
+  - PETCO STORE
+- rule_id: GEAR_THINK_TANK
+  pattern: \b(THINK\s*TANK\s*PHOTO|MINDSHIFT\s*GEAR)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Think Tank Photo roller cases and camera backpacks.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - THINK TANK PHOTO SANTA ROSA
+  - MINDSHIFT GEAR PACKS
+  negative_examples:
+  - THINK BISTRO
+  - TANK GAS STATION
+- rule_id: GEAR_TENBA
+  pattern: \b(TENBA\s*(?:BAGS|CASES|PHOTO))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: Tenba air cases, transport bags, and lens wraps.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - TENBA BAGS ONLINE
+  - TENBA CASES DIRECT
+  negative_examples:
+  - TENNESSEE MOTEL
+  - TGI FRIDAYS
+- rule_id: GEAR_LOWEPRO
+  pattern: \b(LOWEPRO\s*(?:BAGS|PACKS|DIRECT))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: Lowepro camera bags, backpacks, and modular belts.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - LOWEPRO BAGS DIRECT
+  - LOWEPRO PACKS ONLINE
+  negative_examples:
+  - LOWES HARDWARE
+  - FLOWER SHOP
+- rule_id: GEAR_TETHER_TOOLS
+  pattern: \b(TETHER\s*TOOLS|TETHERPRO)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Tether Tools USB-C high-speed tethering cables and tables.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - TETHER TOOLS PHOENIX AZ
+  - TETHERPRO USB-C CABLE
+  negative_examples:
+  - TOOL RENTAL DEPO
+  - TETHER CRYPTO
+- rule_id: GEAR_SEKONIC
+  pattern: \b(SEKONIC\s*(?:METERS|USA|INC))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Sekonic incident and spot light meters for studio exposures.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SEKONIC METERS USA
+  - SEKONIC INC OPTICS
+  negative_examples:
+  - SECOND CUP CAFE
+  - SONY STORE
+- rule_id: GEAR_MATTHEWS
+  pattern: \b(MATTHEWS\s*STUDIO\s*EQUIPMENT|MSE\s*GRIP)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Matthews C-stands, boom arms, and studio grip hardware.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MATTHEWS STUDIO EQUIPMENT BURBANK
+  - MSE GRIP HARDWARE
+  negative_examples:
+  - MATTHEW DINER
+  - STUDIO GHIBLI
+- rule_id: GEAR_KUPO
+  pattern: \b(KUPO\s*GRIP|KUPO\s*USA)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Kupo grip heads, baby pins, and heavy-duty studio stands.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - KUPO GRIP HARDWARE
+  - KUPO USA STUDIO
+  negative_examples:
+  - KUPON STORE
+  - COFFEE CUP
+- rule_id: GEAR_AVENGER
+  pattern: \b(AVENGER\s*GRIP|AVENGER\s*STANDS)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Avenger high-capacity lighting stands and rollers.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - AVENGER GRIP SYSTEM
+  - AVENGER STANDS STUDIO
+  negative_examples:
+  - AVENGERS TOYS
+  - AIRLINE TRIP
+- rule_id: GEAR_SAVAGE
+  pattern: \b(SAVAGE\s*UNIVERSAL|SAVAGE\s*SEAMLESS)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Savage Universal seamless studio background paper and vinyl.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SAVAGE UNIVERSAL PHOENIX
+  - SAVAGE SEAMLESS PAPER
+  negative_examples:
+  - SAVAGE TACO
+  - STRAND BOOKS
+- rule_id: GEAR_BH_ADORAMA
+  pattern: \b(B&H\s*PHOTO|BH\s*PHOTO|B\s*&\s*H\s*PHOTO|BANDH\s*PHOTO)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: B&H Photo Video camera hardware and production supplies.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - B&H PHOTO 800-606-6969 NY
+  - BH PHOTO VIDEO CORP
+  negative_examples:
+  - BED BATH BEYOND
+  - BURGER KING
+- rule_id: GEAR_ADORAMA
+  pattern: \b(?<!PRINTIQUE BY )(?<!PRINTIQUE\s)ADORAMA(?!\s*RENTAL)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Adorama camera gear, lighting equipment, and accessories.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ADORAMA CAMERA NYC
+  - ADORAMA INC NY
+  negative_examples:
+  - ADORAMA RENTAL CO
+  - ADOBE SYSTEMS
+- rule_id: GEAR_SAMYS
+  pattern: \b(SAMYS\s*CAMERA|SAMY'?S\s*PHOTO)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: Samy's Camera sales of digital equipment, lighting, and gear.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SAMYS CAMERA LOS ANGELES
+  - SAMY'S PHOTO STORE
+  negative_examples:
+  - SAMYS RENTAL DEPT
+  - SAMMY DINER
+- rule_id: GEAR_KEH
+  pattern: \b(KEH\s*CAMERA|KEH\.COM)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: KEH Camera pre-owned lenses, bodies, and medium format gear.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - KEH CAMERA SMYRNA GA
+  - KEH.COM ONLINE CAMERA
+  negative_examples:
+  - KFC RESTAURANT
+  - DELTA AIR
+- rule_id: GEAR_MPB
+  pattern: \b(MPB\.COM|MPB\s*US|MPB\s*EUROPE)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.95
+  explanation: MPB traded camera bodies, cine lenses, and accessories.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MPB.COM BROOKLYN NY
+  - MPB US USED GEAR
+  negative_examples:
+  - MTA METROCARD
+  - MARRIOTT HOTEL
+- rule_id: GEAR_CALUMET
+  pattern: \b(CALUMET\s*PHOTOGRAPHIC)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: Calumet Photographic studio lighting and camera supplies.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CALUMET PHOTOGRAPHIC STORE
+  - CALUMET PHOTOGRAPHIC UK
+  negative_examples:
+  - CALIFORNIA CAFE
+  - METRO TICKETS
+- rule_id: GEAR_PRO_PHOTO_SUPPLY
+  pattern: \b(PRO\s*PHOTO\s*SUPPLY)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: Pro Photo Supply camera store and digital imaging equipment.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PRO PHOTO SUPPLY PORTLAND
+  - PRO PHOTO SUPPLY STORE
+  negative_examples:
+  - PRO FOOTBALL
+  - PORTLAND AIRPORT
+- rule_id: GEAR_MIDWEST_PHOTO
+  pattern: \b(MIDWEST\s*PHOTO|MPEX\.COM)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: Midwest Photo camera gear, lighting, and learning studio.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MIDWEST PHOTO COLUMBUS OH
+  - MPEX.COM PHOTO GEAR
+  negative_examples:
+  - MIDWEST AIRLINES
+  - UBER TRIP
+- rule_id: GEAR_FOTO_CARE
+  pattern: \b(FOTO\s*CARE(?!\s*RENTAL))\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.94
+  explanation: Foto Care professional camera store and studio hardware NYC.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - FOTO CARE NYC STORE
+  - FOTO CARE HARDWARE
+  negative_examples:
+  - FOTO CARE RENTAL
+  - CARE COFFEE
+- rule_id: RENT_LENSRENTALS
+  pattern: \b(LENSRENTALS|LENS\s*RENTALS)\b
+  category: Gear & Lens Rentals
+  base_confidence: 0.96
+  explanation: LensRentals camera, cinema body, and specialty lens hires.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - LENSRENTALS.COM 901-754-9100 TN
+  - LENS RENTALS MEMPHIS
+  negative_examples:
+  - LENS CRAFTERS
+  - RENTAL CAR HERTZ
+- rule_id: RENT_BORROWLENSES
+  pattern: \b(BORROWLENSES|BORROW\s*LENSES)\b
+  category: Gear & Lens Rentals
+  base_confidence: 0.96
+  explanation: BorrowLenses photography and video equipment rental.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - BORROWLENSES.COM SAN CARLOS
+  - BORROW LENSES RENTAL
+  negative_examples:
+  - BORROW MONEY
+  - LENS CRAFTERS
+- rule_id: RENT_SHAREGRID
+  pattern: \b(SHAREGRID)\b
+  category: Gear & Lens Rentals
+  base_confidence: 0.95
+  explanation: ShareGrid peer-to-peer film and photography camera gear hire.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SHAREGRID INC LOS ANGELES
+  - SHAREGRID COMMUNITY RENT
+  negative_examples:
+  - GRIDDLE CAFE
+  - UBER TRIP
+- rule_id: RENT_KITSPLIT
+  pattern: \b(KITSPLIT)\b
+  category: Gear & Lens Rentals
+  base_confidence: 0.95
+  explanation: KitSplit creative equipment rental platform.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - KITSPLIT INC BROOKLYN NY
+  - KITSPLIT GEAR RENTAL
+  negative_examples:
+  - KITCHEN DINER
+  - SPLIT BILL
+- rule_id: RENT_CSI
+  pattern: \b(CSI\s*RENTALS)\b
+  category: Gear & Lens Rentals
+  base_confidence: 0.95
+  explanation: CSI Rentals NYC studio cameras, grip trucks, and strobes.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CSI RENTALS NYC 212-941-8696
+  - CSI RENTALS BROOKLYN
+  negative_examples:
+  - CSI INVESTIGATION
+  - RENT A CAR
+- rule_id: RENT_ADORAMA_RENTAL
+  pattern: \b(ADORAMA\s*RENTAL(?:\s*CO)?|ARC\s*RENTALS)\b
+  category: Gear & Lens Rentals
+  base_confidence: 0.95
+  explanation: Adorama Rental Co cine, still camera, and lighting rentals.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ADORAMA RENTAL CO NYC
+  - ARC RENTALS NEW YORK
+  negative_examples:
+  - ADORAMA CAMERA SALES
+  - AIRLINE TICKET
+- rule_id: RENT_SAMYS_RENTAL
+  pattern: \b(SAMYS\s*RENTAL|SAMY'?S\s*RENTAL)\b
+  category: Gear & Lens Rentals
+  base_confidence: 0.95
+  explanation: Samy's Camera rental department cinema and still packages.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SAMYS RENTAL DEPT LA
+  - SAMY'S RENTAL SERVICE
+  negative_examples:
+  - SAMYS CAMERA SALES
+  - SAMMY DELI
+- rule_id: RENT_FOTOCARE_RENTAL
+  pattern: \b(FOTOCARE\s*RENTAL|FOTO\s*CARE\s*RENTAL)\b
+  category: Gear & Lens Rentals
+  base_confidence: 0.95
+  explanation: Foto Care rental department medium format and strobe kits.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - FOTOCARE RENTAL NYC
+  - FOTO CARE RENTAL DEPT
+  negative_examples:
+  - FOTO CARE STORE
+  - DAYCARE
+- rule_id: RENT_MILK_EQUIPMENT
+  pattern: \b(MILK\s*EQUIPMENT|MILK\s*STUDIOS\s*RENTAL)\b
+  category: Gear & Lens Rentals
+  base_confidence: 0.95
+  explanation: Milk Studios equipment rental department lighting packages.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MILK EQUIPMENT RENTAL NYC
+  - MILK STUDIOS RENTAL LA
+  negative_examples:
+  - MILK GROCERY
+  - MILK CAFE
+- rule_id: RENT_SCHEIMPFLUG
+  pattern: \b(SCHEIMPFLUG)\b
+  category: Gear & Lens Rentals
+  base_confidence: 0.95
+  explanation: Scheimpflug digital capture and film equipment rentals.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SCHEIMPFLUG EQUIPMENT RENTAL
+  - SCHEIMPFLUG NYC GRIP
+  negative_examples:
+  - GERMAN DINER
+  - FLIGHT TICKET
+- rule_id: RENT_HAND_HELD_FILMS
+  pattern: \b(HAND\s*HELD\s*FILMS)\b
+  category: Gear & Lens Rentals
+  base_confidence: 0.94
+  explanation: Hand Held Films cinema camera, vintage lens, and lighting hire.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - HAND HELD FILMS NYC
+  - HAND HELD FILMS RENTALS
+  negative_examples:
+  - HOLDING COMPANY
+  - INDIE FILM LAB
+- rule_id: RENT_TCS_FILM
+  pattern: \b(TCS\s*FILM\s*RENTAL)\b
+  category: Gear & Lens Rentals
+  base_confidence: 0.94
+  explanation: TCS Film cinema equipment and anamorphic lens rentals.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - TCS FILM RENTAL NYC
+  - TCS FILM RENTAL SERVICES
+  negative_examples:
+  - TCS TAX SERVICE
+  - COFFEE SHOP
+- rule_id: RENT_KESLOW
+  pattern: \b(KESLOW\s*CAMERA)\b
+  category: Gear & Lens Rentals
+  base_confidence: 0.95
+  explanation: Keslow Camera cine equipment, Alexa bodies, and optics rental.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - KESLOW CAMERA CULVER CITY
+  - KESLOW CAMERA RENTAL
+  negative_examples:
+  - FLOW CAFE
+  - CAMERA STORE
+- rule_id: RENT_OTTO_NEMENZ
+  pattern: \b(OTTO\s*NEMENZ)\b
+  category: Gear & Lens Rentals
+  base_confidence: 0.95
+  explanation: Otto Nemenz International cinematography rental services.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - OTTO NEMENZ HOLLYWOOD
+  - OTTO NEMENZ CAMERA RENT
+  negative_examples:
+  - AUTO PARTS
+  - GERMAN BAKERY
+- rule_id: PRINT_BLURB
+  pattern: \b(BLURB(?!\s*\*?\s*(?:AUTHOR\s*)?ROYALTY))\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Blurb short-run monograph printing and custom photobook runs.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - BLURB *BOOK PRINT RUN SF
+  - BLURB BOOKS NETHERLANDS
+  negative_examples:
+  - BLURB AUTHOR ROYALTY
+  - BLUE BOTTLE
+- rule_id: PRINT_ARTIFACT
+  pattern: \b(ARTIFACT\s*UPRISING)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Artifact Uprising premium photobooks and archival folios.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ARTIFACT UPRISING DENVER
+  - ARTIFACT UPRISING BOOKS
+  negative_examples:
+  - ART MUSEUM
+  - STRAND BOOKS
+- rule_id: PRINT_PRINTIQUE
+  pattern: \b(PRINTIQUE|ADORAMAPIC)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Printique fine art metal prints, silver halide paper, and photobooks.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PRINTIQUE BY ADORAMA BROOKLYN
+  - PRINTIQUE PHOTO BOOKS
+  negative_examples:
+  - ANTIQUE SHOP
+  - ADORAMA RENTAL
+- rule_id: PRINT_SAAL
+  pattern: \b(SAAL\s*DIGITAL)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Saal Digital professional layflat photobooks and acrylic prints.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SAAL DIGITAL CORP USA
+  - SAAL DIGITAL PHOTO LAB
+  negative_examples:
+  - DIGITAL OCEAN
+  - SAL'S PIZZA
+- rule_id: PRINT_INDIE_FILM_LAB
+  pattern: \b(INDIE\s*FILM\s*LAB)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Indie Film Lab professional 120/35mm development and Frontier scans.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - INDIE FILM LAB MONTGOMERY AL
+  - INDIE FILM LAB C-41
+  negative_examples:
+  - INDIANA MOTEL
+  - FILM FESTIVAL
+- rule_id: PRINT_THE_DARKROOM
+  pattern: \b(THE\s*DARKROOM\s*LAB|THEDARKROOM\.COM)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: The Darkroom mail-in analog film developing and high-res scans.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - THEDARKROOM.COM SAN CLEMENTE
+  - THE DARKROOM LAB DEV
+  negative_examples:
+  - DARKROOM BAR
+  - HOTEL ROOM
+- rule_id: PRINT_RICHARD
+  pattern: \b(RICHARD\s*PHOTO\s*LAB)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Richard Photo Lab fine art photographic printing and film scans.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - RICHARD PHOTO LAB VALENCIA CA
+  - RICHARD PHOTO LAB SCAN
+  negative_examples:
+  - RICHARD DINER
+  - PHOTO BOOTH
+- rule_id: PRINT_BAY_PHOTO
+  pattern: \b(BAY\s*PHOTO\s*LAB|BAY\s*PHOTO\.COM)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Bay Photo Lab metal prints, canvas gallery wraps, and albums.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - BAY PHOTO LAB SOQUEL CA
+  - BAY PHOTO.COM LAB ORDER
+  negative_examples:
+  - BAY AREA TRANSIT
+  - OYSTER BAY INN
+- rule_id: PRINT_WHITEWALL
+  pattern: \b(WHITEWALL|WHITE\s*WALL)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: WhiteWall gallery-grade acrylic face mounts and custom frames.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - WHITEWALL LAB NEW YORK
+  - WHITE WALL MEDIA LAB
+  negative_examples:
+  - WALMART STORE
+  - WHITE CASTLE
+- rule_id: PRINT_MILLERS
+  pattern: \b(MILLERS\s*PRO|MILLER'?S\s*PROFESSIONAL)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Miller's Professional Imaging photographic prints and albums.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MILLERS PRO IMAGING PITTSBURG KS
+  - MILLER'S PROFESSIONAL LAB
+  negative_examples:
+  - MILLER LITE BEER
+  - MILLER MOTEL
+- rule_id: PRINT_LOXLEY
+  pattern: \b(LOXLEY\s*COLOUR)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Loxley Colour bespoke hand-bound heirloom photo albums.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - LOXLEY COLOUR LAB GLASGOW
+  - LOXLEY COLOUR ALBUMS
+  negative_examples:
+  - COLORADO MOTEL
+  - UBER TRIP
+- rule_id: PRINT_FOLIO_ALBUMS
+  pattern: \b(FOLIO\s*ALBUMS)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Folio Albums fine art handmade leather bound wedding books.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - FOLIO ALBUMS UK DIRECT
+  - FOLIO ALBUMS HANDMADE
+  negative_examples:
+  - PORTFOLIO CAFE
+  - HOTEL FOLIO
+- rule_id: PRINT_EDITION_ONE
+  pattern: \b(EDITION\s*ONE\s*BOOKS)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Edition One Books short-run monograph publishing and binding.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - EDITION ONE BOOKS BERKELEY CA
+  - EDITION ONE BOOKS RUN
+  negative_examples:
+  - FIRST EDITION DINER
+  - BARNES NOBLE
+- rule_id: PRINT_CONVEYOR
+  pattern: \b(CONVEYOR\s*(?:STUDIO|EDITIONS))\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.95
+  explanation: Conveyor Studio risograph and small press photobook printing.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CONVEYOR STUDIO BROOKLYN
+  - CONVEYOR EDITIONS PRESS
+  negative_examples:
+  - CONVEYOR BELT REPAIR
+  - STUDIO RENTAL
+- rule_id: PRINT_SCHUBERT
+  pattern: \b(SCHUBERT\s*ARCHIVAL\s*BINDERY)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Schubert Archival Bindery bookbinding, debossing, and folios.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SCHUBERT ARCHIVAL BINDERY LLC
+  - SCHUBERT ARCHIVAL BINDERY NYC
+  negative_examples:
+  - UBER TRIP
+  - SCHUBERT THEATER
+- rule_id: PRINT_BOOKBABY
+  pattern: \b(BOOKBABY)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.95
+  explanation: BookBaby hardcover book printing and binding services.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - BOOKBABY PENNSAUKEN NJ
+  - BOOKBABY PRINT RUN
+  negative_examples:
+  - BABY STORE
+  - STRAND BOOKS
+- rule_id: PRINT_MIXAM
+  pattern: \b(MIXAM\s*(?:PRINT|INC))\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.95
+  explanation: Mixam offset and digital printing for photo zines and catalogs.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MIXAM PRINT SCHAUMBURG IL
+  - MIXAM INC ZINE RUN
+  negative_examples:
+  - MEXICAN GRILL
+  - AMAZON
+- rule_id: PRINT_HEMLOCK
+  pattern: \b(HEMLOCK\s*PRINTERS)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Hemlock Printers premium art book offset lithography.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - HEMLOCK PRINTERS BURNABY
+  - HEMLOCK PRINTERS ART RUN
+  negative_examples:
+  - HEMLOCK INN
+  - PRINT STORE
+- rule_id: PRINT_DATZ
+  pattern: \b(DATZ\s*PRESS)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.95
+  explanation: Datz Press fine art photobook bindery and publisher.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - DATZ PRESS SEOUL
+  - DATZ PRESS PUBLISHING
+  negative_examples:
+  - DATA RECOVERY
+  - EXPRESS SHIP
+- rule_id: PRINT_WHCC
+  pattern: \b(WHCC|WHITE\s*HOUSE\s*CUSTOM\s*COLO(?:U)?R)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: White House Custom Colour photographic printing and press books.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - WHCC EAGAN MN
+  - WHITE HOUSE CUSTOM COLOR LAB
+  negative_examples:
+  - WHITE CASTLE
+  - WHITE WATER INN
+- rule_id: PRINT_THE_FIND_LAB
+  pattern: \b(THE\s*FIND\s*LAB)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.95
+  explanation: The Find Lab professional analog film processing and grading.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - THE FIND LAB OREM UT
+  - THE FIND LAB SCANS
+  negative_examples:
+  - FIND MY IPHONE
+  - LABORATORY FEE
+- rule_id: PRINT_CARMENCITA
+  pattern: \b(CARMENCITA\s*FILM\s*LAB)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.95
+  explanation: Carmencita Film Lab European film scans and archival printing.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CARMENCITA FILM LAB VALENCIA
+  - CARMENCITA FILM LAB SCANS
+  negative_examples:
+  - CARMEN TAPAS
+  - FILM RENTAL
+- rule_id: PRINT_DUGGAL
+  pattern: \b(DUGGAL\s*VISUAL)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.95
+  explanation: Duggal Visual Solutions large-scale museum printing and mounting.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - DUGGAL VISUAL SOLUTIONS NYC
+  - DUGGAL VISUAL PHOTO LAB
+  negative_examples:
+  - DUCK DINER
+  - VISUAL STUDIO
+- rule_id: PRINT_HAHNEMUHLE
+  pattern: \b(HAHNEMUHLE|HAHNEMUEHLE)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Hahnemuhle fine art cotton rag papers for exhibition prints.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - HAHNEMUHLE USA DIRECT
+  - HAHNEMUEHLE FINE ART PAPER
+  negative_examples:
+  - GERMAN DELI
+  - OFFICE DEPOT
+- rule_id: PRINT_ILFORD
+  pattern: \b(ILFORD\s*(?:PHOTO|PAPER|DIRECT))\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Ilford Photo traditional black-and-white chemistry and papers.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ILFORD PHOTO PAPER UK
+  - ILFORD PHOTO HARMAN DIRECT
+  negative_examples:
+  - FORD MOTORS
+  - OIL CHANGE
+- rule_id: PRINT_KODAK_ALARIS
+  pattern: \b(KODAK\s*(?:ALARIS|PROFESSIONAL|FILM))\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.96
+  explanation: Kodak Professional Portra and Tri-X analog film stocks.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - KODAK ALARIS ROCHESTER
+  - KODAK PROFESSIONAL FILM
+  negative_examples:
+  - KODAK THEATER
+  - AIRLINE TRIP
+- rule_id: PRINT_MOAB
+  pattern: \b(MOAB\s*PAPER|LEGION\s*PAPER)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.95
+  explanation: Moab fine art inkjet papers Entrada Rag for book production.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MOAB PAPER COMPANY NY
+  - LEGION PAPER MOAB ENTRADA
+  negative_examples:
+  - MOAB UT MOTEL
+  - DAILY NEWS
+- rule_id: PRINT_CANSON
+  pattern: \b(CANSON\s*(?:INFINITY|PAPER))\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.95
+  explanation: Canson Infinity archival photo papers and canvas.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CANSON INFINITY USA
+  - CANSON PAPER STORE
+  negative_examples:
+  - CANON CAMERA
+  - COFFEE SHOP
+- rule_id: PRINT_AWAGAMI
+  pattern: \b(AWAGAMI\s*(?:FACTORY|WASHI|PAPER))\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.95
+  explanation: Awagami Factory Japanese washi papers for limited edition photobooks.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - AWAGAMI FACTORY WASHI
+  - AWAGAMI PAPER DIRECT
+  negative_examples:
+  - JAPAN AIRLINES
+  - SUSHI BAR
+- rule_id: PRINT_INGRAMSPARK
+  pattern: \b(INGRAMSPARK|INGRAM\s*SPARK)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.95
+  explanation: IngramSpark monograph print on demand setup and print costs.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - INGRAMSPARK PRINT ORDERS
+  - INGRAM SPARK SETUP FEE
+  negative_examples:
+  - INGRAM CONTENT ROYALTY
+  - SPARK ENERGY
+- rule_id: PRINT_LULU
+  pattern: \b(LULU\s*PRESS|LULU\.COM)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.95
+  explanation: Lulu Press print-on-demand books and portfolio reviews.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - LULU PRESS INC MORRISVILLE
+  - LULU.COM PRINT ON DEMAND
+  negative_examples:
+  - LULULEMON ATHLETICA
+  - LULU CAFE
+- rule_id: PRINT_PURSELL
+  pattern: \b(PURSELL\s*PRINTING)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.94
+  explanation: Pursell Printing catalog, book, and brochure print house.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PURSELL PRINTING DIRECT
+  - PURSELL PRINTING RUN
+  negative_examples:
+  - PURSE SHOP
+  - RESTAURANT
+- rule_id: PRINT_HEIDELBERG
+  pattern: \b(HEIDELBERG\s*PRINT)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.94
+  explanation: Heidelberg print and prepress commercial runs.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - HEIDELBERG PRINT SERVICES
+  - HEIDELBERG PRINT RUN
+  negative_examples:
+  - HEIDELBERG INN
+  - TAXI FARE
+- rule_id: SW_ADOBE
+  pattern: \b(ADOBE\s*\*?(?:CREATIVE|PHOTOG|SUBSCRIPTION|CC|STOCK)?)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.96
+  explanation: Adobe Creative Cloud, Photoshop, Lightroom, and InDesign subscriptions.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ADOBE *PHOTOGRAPHY PLAN
+  - ADOBE CREATIVE CLOUD SUBSCRIPTION
+  negative_examples:
+  - COFFEE SHOP NYC
+  - DELTA AIRLINES
+- rule_id: SW_CAPTURE_ONE
+  pattern: \b(CAPTURE\s*ONE)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.96
+  explanation: Capture One Pro RAW studio tethering and color grading software.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CAPTURE ONE COPENHAGEN
+  - CAPTURE ONE PRO SUBSCRIPTION
+  negative_examples:
+  - CAPTURE STUDIO
+  - AIRLINE TRIP
+- rule_id: SW_PHOTO_MECHANIC
+  pattern: \b(CAMERA\s*BITS|PHOTO\s*MECHANIC)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.96
+  explanation: Photo Mechanic ultra-fast RAW culling and metadata ingest software.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CAMERA BITS INC HILLSBORO
+  - PHOTO MECHANIC LICENSE
+  negative_examples:
+  - CAMERA STORE
+  - MECHANIC REPAIR
+- rule_id: SW_DXO
+  pattern: \b(DXO\s*(?:LABS|SOFTWARE|PHOTOLAB))\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: DxO PhotoLab optical correction and FilmPack emulation software.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - DXO LABS BOULOGNE
+  - DXO PHOTOLAB LICENSE
+  negative_examples:
+  - EXXON GAS
+  - UBER TRIP
+- rule_id: SW_TOPAZ
+  pattern: \b(TOPAZ\s*LABS)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: Topaz Labs AI photo gigapixel sharpening and denoising suite.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - TOPAZ LABS DALLAS TX
+  - TOPAZ LABS GIGAPIXEL
+  negative_examples:
+  - TOPAZ CAFE
+  - HOTEL ROOM
+- rule_id: SW_IMAGEN
+  pattern: \b(IMAGEN\s*AI)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: Imagen AI personalized Lightroom automated post-production editing.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - IMAGEN AI SUBSCRIPTION
+  - IMAGEN AI BATCH RUN
+  negative_examples:
+  - IMAGE PHOTOGRAPHY
+  - IMAX CINEMA
+- rule_id: SW_AFTERSHOOT
+  pattern: \b(AFTERSHOOT)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: Aftershoot AI automated culling and editing assistant software.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - AFTERSHOOT INC CULLING
+  - AFTERSHOOT SUBSCRIPTION
+  negative_examples:
+  - AFTER PARTY
+  - SHOOT PERMIT
+- rule_id: SW_FRAME_IO
+  pattern: \b(FRAME\.IO)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: Frame.io video review and camera-to-cloud collaborative workflow.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - FRAME.IO NEW YORK NY
+  - FRAME.IO CLOUD STORAGE
+  negative_examples:
+  - PICTURE FRAME STORE
+  - AIRLINE
+- rule_id: SW_DROPBOX
+  pattern: \b(DROPBOX\s*(?:INC|PAYMENTS)?)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: Dropbox business cloud storage and client file asset delivery.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - DROPBOX*9J2K9SAN FRANCISCO
+  - DROPBOX INC PAYMENTS
+  negative_examples:
+  - DROP OFF CLEANERS
+  - POST OFFICE
+- rule_id: SW_GOOGLE_WORKSPACE
+  pattern: \b(GOOGLE\s*\*?(?:WORKSPACE|GSUITE|CLOUD|STORAGE))\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: Google Workspace studio business email, docs, and Google Drive.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - GOOGLE *WORKSPACE CC
+  - GOOGLE *GSUITE STUDIO EMAIL
+  negative_examples:
+  - GOOGLE ADS
+  - GOOGLE PLAY MUSIC
+- rule_id: SW_MICROSOFT
+  pattern: \b(MICROSOFT\s*\*?(?:365|OFFICE))\b
+  category: Software & Digital Workflow
+  base_confidence: 0.94
+  explanation: Microsoft 365 business productivity and spreadsheet tools.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MICROSOFT*365 SUBSCRIPTION
+  - MICROSOFT*OFFICE PRO
+  negative_examples:
+  - MICRO CENTER
+  - UBER TRIP
+- rule_id: SW_NOTION
+  pattern: \b(NOTION\s*(?:LABS|SO|INC))\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: Notion studio project tracking, call-sheets, and editorial calendars.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - NOTION LABS INC SAN FRANCISCO
+  - NOTION SO SUBSCRIPTION
+  negative_examples:
+  - NOTTINGHAM HOTEL
+  - CAFE NOTION
+- rule_id: SW_SLACK
+  pattern: \b(SLACK\s*(?:TECHNOLOGIES|INC|SUBSCRIPTION|\.COM)?)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: Slack Technologies studio team and producer chat communication.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SLACK TECHNOLOGIES INC SF
+  - SLACK SUBSCRIPTION PRO
+  negative_examples:
+  - SLACKS CLOTHING
+  - SNACK SHOP
+- rule_id: SW_ZOOM
+  pattern: \b(ZOOM\.US|ZOOM\s*VIDEO\s*COMM)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.94
+  explanation: Zoom Video client pre-production calls and creative meetings.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ZOOM.US SAN JOSE CA
+  - ZOOM VIDEO COMM PRO
+  negative_examples:
+  - ZOOM ZOOM AUTO
+  - CAR RENTAL
+- rule_id: SW_FIGMA
+  pattern: \b(FIGMA\s*(?:INC)?)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: Figma photobook layout prototyping, pitch decks, and wireframes.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - FIGMA INC SAN FRANCISCO
+  - FIGMA DESIGN TEAM
+  negative_examples:
+  - FIG RESTAURANT
+  - GAS STATION
+- rule_id: SW_CANVA
+  pattern: \b(CANVA\s*(?:PTY|LTD|PRO))\b
+  category: Software & Digital Workflow
+  base_confidence: 0.94
+  explanation: Canva graphic design tools for client pitch decks and studio promos.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CANVA PTY LTD SYDNEY
+  - CANVA PRO SUBSCRIPTION
+  negative_examples:
+  - CANVAS PRINTS
+  - HOTEL ROOM
+- rule_id: SW_ASANA
+  pattern: \b(ASANA\s*(?:INC)?)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.94
+  explanation: Asana studio task management and editorial shoot coordination.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ASANA INC SAN FRANCISCO
+  - ASANA PROJECT WORKFLOW
+  negative_examples:
+  - ASIAN MARKET
+  - RESTAURANT
+- rule_id: SW_MONDAY
+  pattern: \b(MONDAY\.COM)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.94
+  explanation: Monday.com production workflow and client project tracking.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MONDAY.COM NYC
+  - MONDAY.COM CLOUD WORKFLOW
+  negative_examples:
+  - MONDAY NIGHT PIZZA
+  - UBER TRIP
+- rule_id: SW_TRELLO
+  pattern: \b(TRELLO\s*(?:INC)?)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.94
+  explanation: Trello Kanban board workflow for shoot pre-production stages.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - TRELLO INC ATLASSIAN
+  - TRELLO PRO WORKSPACE
+  negative_examples:
+  - TRATTORIA ROMA
+  - STARBUCKS COFFEE
+- rule_id: SW_BACKBLAZE
+  pattern: \b(BACKBLAZE)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: Backblaze cloud workstation backup and B2 cloud RAW storage.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - BACKBLAZE INC SAN MATEO
+  - BACKBLAZE B2 STORAGE
+  negative_examples:
+  - BACKSTAGE CAFE
+  - TRAIN TICKET
+- rule_id: SW_1PASSWORD
+  pattern: \b(1PASSWORD|AGILEBITS)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: 1Password secure studio credentials and client gallery vault.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - 1PASSWORD TORONTO ON
+  - AGILEBITS 1PASSWORD CC
+  negative_examples:
+  - ONE STOP SHOP
+  - GAS STATION
+- rule_id: SW_SETAPP
+  pattern: \b(SETAPP)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: Setapp curated macOS photography and creative utilities suite.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SETAPP INC DUBLIN IE
+  - SETAPP MAC SUBSCRIPTION
+  negative_examples:
+  - SETUP FEE
+  - RESTAURANT
+- rule_id: SW_WETRANSFER
+  pattern: \b(WETRANSFER)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: WeTransfer Pro heavy RAW image export and delivery service.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - WETRANSFER AMSTERDAM
+  - WETRANSFER PRO SUBSCRIPTION
+  negative_examples:
+  - WIRE TRANSFER FEE
+  - INTERNAL TRANSFER
+- rule_id: SW_LOOM
+  pattern: \b(LOOM\s*(?:INC)?)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.94
+  explanation: Loom async screen recording for client edit feedback walkthroughs.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - LOOM INC SAN FRANCISCO
+  - LOOM RECORDING PRO
+  negative_examples:
+  - FRUIT STAND NYC
+  - APPLE STORE
+- rule_id: SW_GRAMMARLY
+  pattern: \b(GRAMMARLY)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.94
+  explanation: Grammarly business proofing for monograph essays and client pitches.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - GRAMMARLY INC SAN FRANCISCO
+  - GRAMMARLY PREMIUM SUB
+  negative_examples:
+  - GRAND HOTEL
+  - UBER TRIP
+- rule_id: SW_MILANOTE
+  pattern: \b(MILANOTE)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: Milanote visual moodboard, storyboard, and set design planning.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MILANOTE MELBOURNE
+  - MILANOTE PRO MOODBOARD
+  negative_examples:
+  - MILANO CAFE
+  - ITALY AIRLINE
+- rule_id: SW_QUICKBOOKS
+  pattern: \b(QUICKBOOKS|INTUIT\s*\*?QB)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: Intuit QuickBooks Online studio accounting and invoicing subscription.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - INTUIT *QUICKBOOKS MT VIEW CA
+  - QUICKBOOKS ONLINE MONTHLY
+  negative_examples:
+  - QUICK CAR WASH
+  - BARNES NOBLE
+- rule_id: SW_XERO
+  pattern: \b(XERO\s*(?:INC)?)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: Xero cloud accounting software for studio bookkeeping.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - XERO INC SAN FRANCISCO
+  - XERO MONTHLY PLAN
+  negative_examples:
+  - XEROX CORP
+  - AIRLINE TICKET
+- rule_id: SW_FRESHBOOKS
+  pattern: \b(FRESHBOOKS)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: FreshBooks cloud studio invoicing and time-tracking.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - FRESHBOOKS TORONTO ON
+  - FRESHBOOKS SUBSCRIPTION
+  negative_examples:
+  - FRESH MARKET
+  - BOOK STORE
+- rule_id: SW_WAVE
+  pattern: \b(WAVE\s*(?:FINANCIAL|APPS))\b
+  category: Software & Digital Workflow
+  base_confidence: 0.94
+  explanation: Wave Financial invoicing and small studio accounting payroll.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - WAVE FINANCIAL TORONTO
+  - WAVE APPS PRO ACCOUNT
+  negative_examples:
+  - WAVE HOTEL
+  - CAR WASH
+- rule_id: SW_DUBSADO
+  pattern: \b(DUBSADO)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: Dubsado studio business management and contract signing.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - DUBSADO BURBANK CA
+  - DUBSADO CLIENT CRM
+  negative_examples:
+  - DUB CAFE
+  - UBER TRIP
+- rule_id: SW_17HATS
+  pattern: \b(17HATS)\b
+  category: Software & Digital Workflow
+  base_confidence: 0.95
+  explanation: 17hats complete business suite for commercial photographers.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - 17HATS LOS ANGELES CA
+  - 17HATS SUBSCRIPTION PRO
+  negative_examples:
+  - HAT STORE
+  - RESTAURANT
+- rule_id: STUDIO_PEERSPACE
+  pattern: \b(PEERSPACE)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.95
+  explanation: Peerspace hourly photo studio, loft, and location shoot rental.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PEERSPACE INC SAN FRANCISCO
+  - PEERSPACE PHOTO STUDIO NYC
+  negative_examples:
+  - PEER REVIEW
+  - AIRLINE
+- rule_id: STUDIO_SPLACER
+  pattern: \b(SPLACER)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.95
+  explanation: Splacer unique architectural location hire for editorial shoots.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SPLACER NEW YORK NY
+  - SPLACER LOCATION SHOOT
+  negative_examples:
+  - SPACEX
+  - HOTEL ROOM
+- rule_id: STUDIO_GIGGSTER
+  pattern: \b(GIGGSTER)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.95
+  explanation: Giggster film and photography location venue booking.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - GIGGSTER SANTA MONICA CA
+  - GIGGSTER LOCATION HIRE
+  negative_examples:
+  - GIGABYTE TECH
+  - UBER TRIP
+- rule_id: STUDIO_AVVAY
+  pattern: \b(AVVAY)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.94
+  explanation: Avvay creative space and music/photo studio rentals.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - AVVAY NASHVILLE TN
+  - AVVAY STUDIO BOOKING
+  negative_examples:
+  - AVENUE CAFE
+  - CAR RENTAL
+- rule_id: STUDIO_FD
+  pattern: \b(FD\s*PHOTO\s*STUDIO)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.95
+  explanation: FD Photo Studio daylight and blackout stages rental.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - FD PHOTO STUDIO LOS ANGELES
+  - FD PHOTO STUDIO NYC
+  negative_examples:
+  - FORD DEALER
+  - PHOTO LAB
+- rule_id: STUDIO_BK_DARKROOM
+  pattern: \b(BROOKLYN\s*DARKROOM)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.95
+  explanation: Brooklyn Darkroom analog darkroom space and enlarger rental.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - BROOKLYN DARKROOM NY
+  - BROOKLYN DARKROOM MEMBERSHIP
+  negative_examples:
+  - BROOKLYN BAGEL
+  - MTA SUBWAY
+- rule_id: STUDIO_GOWANUS
+  pattern: \b(GOWANUS\s*DARKROOM)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.95
+  explanation: Gowanus Darkroom black-and-white printing space and sinks.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - GOWANUS DARKROOM BROOKLYN
+  - GOWANUS DARKROOM HOURLY
+  negative_examples:
+  - GOWANUS OYSTER
+  - HOTEL
+- rule_id: STUDIO_BUSHWICK_DARKROOM
+  pattern: \b(BUSHWICK\s*COMMUNITY\s*DARKROOM)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.95
+  explanation: Bushwick Community Darkroom 24/7 darkroom and chemical access.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - BUSHWICK COMMUNITY DARKROOM BK
+  - BUSHWICK COMMUNITY DARKROOM MONTHLY
+  negative_examples:
+  - BUSHWICK PIZZA
+  - BAR CRAWL
+- rule_id: STUDIO_LIGHTSPACE
+  pattern: \b(LIGHTSPACE\s*STUDIO)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.95
+  explanation: Lightspace Studio daylight loft rental for portrait sessions.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - LIGHTSPACE STUDIO BROOKLYN
+  - LIGHTSPACE STUDIO BOOKING
+  negative_examples:
+  - LIGHTING STORE
+  - SPACESHIP
+- rule_id: STUDIO_MILK_VENUE
+  pattern: \b(MILK\s*STUDIOS(?!\s*(?:EQUIPMENT|RENTAL)))\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.95
+  explanation: Milk Studios production sound stages and studio spaces NYC/LA.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MILK STUDIOS NYC VENUE
+  - MILK STUDIOS STAGE A
+  negative_examples:
+  - MILK STORE GROCERY
+  - MILK EQUIPMENT RENTAL
+- rule_id: PERMIT_NYC_PARKS
+  pattern: \b(NYC\s*PARKS\s*PERMIT|PARKS\s*FILMING\s*PERMIT)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.96
+  explanation: NYC Department of Parks filming and photography location permit (Line
+    23).
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - NYC PARKS PERMIT FILM DEPT
+  - PARKS FILMING PERMIT NYC
+  negative_examples:
+  - CENTRAL PARK BOATHOUSE
+  - PARKING GARAGE
+- rule_id: PERMIT_NYC_FILM
+  pattern: \b(NYC\s*FILM\s*PERMIT|MOME\s*FILM\s*PERMIT)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.96
+  explanation: Mayor's Office of Media & Entertainment commercial photo permit (Line
+    23).
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - NYC FILM PERMIT MOME
+  - MOME FILM PERMIT OFFICE
+  negative_examples:
+  - FILM LAB
+  - THEATER TICKET
+- rule_id: PERMIT_FILMLA
+  pattern: \b(FILMLA|FILM\s*L\.?A\.?\s*PERMIT)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.96
+  explanation: FilmLA on-location municipal photography coordination and permits (Line
+    23).
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - FILMLA INC HOLLYWOOD
+  - FILM L.A. PERMIT FEE
+  negative_examples:
+  - FILM FESTIVAL
+  - LA AIRLINES
+- rule_id: PERMIT_CA_PARKS
+  pattern: \b(CALIFORNIA\s*STATE\s*PARKS\s*PERMIT|CA\s*STATE\s*PARKS\s*FILM)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.96
+  explanation: California State Parks special use photography commercial permit (Line
+    23).
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CALIFORNIA STATE PARKS PERMIT SACRAMENTO
+  - CA STATE PARKS FILM DEPT
+  negative_examples:
+  - CALIFORNIA PIZZA
+  - PARKING
+- rule_id: PERMIT_NPS
+  pattern: \b(NPS\s*\*?SPECIAL\s*USE|NATIONAL\s*PARK\s*SERVICE\s*PERMIT)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.96
+  explanation: National Park Service commercial photography permit (Line 23).
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - NPS *SPECIAL USE PERMIT
+  - NATIONAL PARK SERVICE PERMIT COMM
+  negative_examples:
+  - NATIONAL CAR RENTAL
+  - PARKING
+- rule_id: STUDIO_WEWORK
+  pattern: \b(WEWORK)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.94
+  explanation: WeWork studio desk and client editing meeting space.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - WEWORK BROOKLYN NY
+  - WEWORK ALL ACCESS MONTHLY
+  negative_examples:
+  - WORKING TITLE
+  - RESTAURANT
+- rule_id: STUDIO_INDUSTRIOUS
+  pattern: \b(INDUSTRIOUS\s*(?:OFFICE|COWORKING)?)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.94
+  explanation: Industrious premium office and production conference space.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - INDUSTRIOUS OFFICE NYC
+  - INDUSTRIOUS COWORKING CHICAGO
+  negative_examples:
+  - INDUSTRIAL TOOLS
+  - FACTORY
+- rule_id: STUDIO_SPACES
+  pattern: \b(SPACES\s*WORKS)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.94
+  explanation: Spaces Works creative coworking environment for editing teams.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SPACES WORKS AMSTERDAM
+  - SPACES WORKS DOWNTOWN
+  negative_examples:
+  - SPACE NEEDLE
+  - PARKING SPACES
+- rule_id: STUDIO_THE_WING
+  pattern: \b(THE\s*WING\s*(?:COWORKING)?)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.93
+  explanation: The Wing coworking and client meeting space.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - THE WING NEW YORK NY
+  - THE WING COWORKING MEMBERSHIP
+  negative_examples:
+  - BUFFALO WILD WINGS
+  - AIRLINE WING
+- rule_id: STORAGE_PUBLIC
+  pattern: \b(PUBLIC\s*STORAGE)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.94
+  explanation: Public Storage unit for photobook print runs and bulky props.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PUBLIC STORAGE GLENDALE CA
+  - PUBLIC STORAGE MONTHLY UNIT
+  negative_examples:
+  - PUBLIC TRANSIT
+  - PUBLIC HOUSE
+- rule_id: STORAGE_CUBESMART
+  pattern: \b(CUBESMART)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.94
+  explanation: CubeSmart climate-controlled archival print inventory storage.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CUBESMART MALVERN PA
+  - CUBESMART STORAGE BROOKLYN
+  negative_examples:
+  - SMART CAR
+  - ICE CUBES
+- rule_id: STORAGE_EXTRA_SPACE
+  pattern: \b(EXTRA\s*SPACE\s*STORAGE)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.94
+  explanation: Extra Space Storage studio archive and prop warehouse locker.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - EXTRA SPACE STORAGE SALT LAKE
+  - EXTRA SPACE STORAGE BROOKLYN
+  negative_examples:
+  - EXTRA CAFE
+  - SPACEX
+- rule_id: TRAVEL_DELTA
+  pattern: \b(DELTA\s*AIR(?:LINES)?)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: Delta Air Lines flights for out-of-town editorial assignments.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - DELTA AIRLINES ATLANTA GA
+  - DELTA AIR 0062491024
+  negative_examples:
+  - DELTA FAUCET
+  - DELTA DENTAL
+- rule_id: TRAVEL_UNITED
+  pattern: \b(UNITED\s*AIR(?:LINES)?)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: United Airlines commercial airfare for destination photography shoots.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - UNITED AIRLINES CHICAGO IL
+  - UNITED AIR 0162849102
+  negative_examples:
+  - UNITED WAY
+  - UNITED RENTALS
+- rule_id: TRAVEL_AMERICAN
+  pattern: \b(AMERICAN\s*AIR(?:LINES)?)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: American Airlines flight bookings for book tour and assignments.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - AMERICAN AIRLINES DALLAS TX
+  - AMERICAN AIR 001284910
+  negative_examples:
+  - AMERICAN APPAREL
+  - AMERICAN EXPRESS
+- rule_id: TRAVEL_SOUTHWEST
+  pattern: \b(SOUTHWEST(?:\s*AIRLINES|\s*AIR)?)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: Southwest Airlines domestic travel with checked camera bags.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SOUTHWEST AIRLINES DALLAS
+  - SOUTHWEST AIR 526194
+  negative_examples:
+  - NORTHWEST BREAD
+  - COFFEE SHOP
+- rule_id: TRAVEL_JETBLUE
+  pattern: \b(JETBLUE)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: JetBlue Airways coast-to-coast travel for editorial features.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - JETBLUE AIRWAYS LONG ISLAND
+  - JETBLUE 279401824
+  negative_examples:
+  - BLUE BOTTLE
+  - JET FUEL
+- rule_id: TRAVEL_ALASKA
+  pattern: \b(ALASKA\s*AIR(?:LINES)?)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: Alaska Airlines travel to West Coast commercial shoot locations.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ALASKA AIRLINES SEATTLE WA
+  - ALASKA AIR 02749102
+  negative_examples:
+  - ALASKA CRAB
+  - HOTEL ROOM
+- rule_id: TRAVEL_AMTRAK
+  pattern: \b(AMTRAK)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: Amtrak Northeast regional train travel between NY and DC shoots.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - AMTRAK NYP WASHINGTON DC
+  - AMTRAK TICKET PHILADELPHIA
+  negative_examples:
+  - TRAIN STATION CAFE
+  - SUBWAY SANDWICH
+- rule_id: TRAVEL_UBER
+  pattern: \b(UBER\s*\*?TRIP|UBER\s*\*?BV)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.92
+  explanation: Uber rideshare transport for photographer, assistants, and gear.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - UBER *TRIP 9821 SAN FRANCISCO
+  - UBER *BV HELP.UBER.COM
+  negative_examples:
+  - UBER EATS RESTAURANT
+  - SCHUBERT ARCHIVAL
+- rule_id: TRAVEL_LYFT
+  pattern: \b(LYFT\s*\*?RIDE)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.92
+  explanation: Lyft on-demand ground transport to studio and client sets.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - LYFT *RIDE MON 4PM
+  - LYFT *RIDE TO JFK AIRPORT
+  negative_examples:
+  - LYFT DINER
+  - FORKLIFT RENTAL
+- rule_id: TRAVEL_CURB
+  pattern: \b(CURB\s*TAXI)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.92
+  explanation: Curb NYC yellow cab transit to studio and location shoots.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CURB TAXI NEW YORK NY
+  - CURB TAXI FARE MANHATTAN
+  negative_examples:
+  - CURBSIDE PICKUP
+  - TAXI DANCE
+- rule_id: TRAVEL_MTA
+  pattern: \b(MTA\*NYCT|MTA\s*METROCARD)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.92
+  explanation: MTA NYC transit subway and bus travel to local client shoots.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MTA*NYCT PAYGO NEW YORK
+  - MTA METROCARD VENDING
+  negative_examples:
+  - MTA DENTAL
+  - AIRLINE TRIP
+- rule_id: TRAVEL_BART
+  pattern: \b(BART-CLIPPER|CLIPPER\s*CARD)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.92
+  explanation: Bay Area Rapid Transit Clipper transit to San Francisco studios.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - BART-CLIPPER SAN FRANCISCO
+  - CLIPPER CARD RELOAD OAKLAND
+  negative_examples:
+  - BARBER SHOP
+  - CLIPPER LIGHTER
+- rule_id: TRAVEL_SPOTHERO
+  pattern: \b(SPOTHERO)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.92
+  explanation: SpotHero prepaid parking near commercial shoot locations.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SPOTHERO CHICAGO IL
+  - SPOTHERO PARKING GARAGE NYC
+  negative_examples:
+  - SPOTIFY
+  - HERO SANDWICH
+- rule_id: TRAVEL_PARKWHIZ
+  pattern: \b(PARKWHIZ)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.92
+  explanation: ParkWhiz reserved parking for gear loading and production vehicles.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PARKWHIZ CHICAGO IL
+  - PARKWHIZ PARKING RESERVATION
+  negative_examples:
+  - PARK CAFE
+  - CHEESE WHIZ
+- rule_id: TRAVEL_LAZ
+  pattern: \b(LAZ\s*PARKING)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.92
+  explanation: LAZ Parking garage fees during on-location commercial assignments.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - LAZ PARKING HARTFORD CT
+  - LAZ PARKING BOSTON MA
+  negative_examples:
+  - LAZY DOG CAFE
+  - GAS STATION
+- rule_id: TRAVEL_ICON
+  pattern: \b(ICON\s*PARKING)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.92
+  explanation: Icon Parking production van and grip car garage parking in NYC.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ICON PARKING NEW YORK NY
+  - ICON PARKING SOHO GARAGE
+  negative_examples:
+  - ICON CLOTHING
+  - COMPUTER ICON
+- rule_id: TRAVEL_EZPASS
+  pattern: \b(EZPASS|E-ZPASS)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.92
+  explanation: E-ZPass highway and bridge tolls for location shoot transit.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - EZPASS NY CSC REPLENISH
+  - E-ZPASS TOLLS REFILL
+  negative_examples:
+  - EASY JET
+  - PASSPORT PHOTO
+- rule_id: TRAVEL_HERTZ
+  pattern: \b(HERTZ\s*RENT|HERTZ\.COM)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: Hertz rental car and cargo SUV hire for location scouting.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - HERTZ RENT A CAR LAX
+  - HERTZ.COM CAR RESERVATION
+  negative_examples:
+  - HERTZ MUSIC
+  - HEART CLINIC
+- rule_id: TRAVEL_ENTERPRISE
+  pattern: \b(ENTERPRISE\s*RENT)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: Enterprise Rent-A-Car passenger van and vehicle hire.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ENTERPRISE RENT-A-CAR NYC
+  - ENTERPRISE RENT CAR JFK
+  negative_examples:
+  - STAR TREK ENTERPRISE
+  - ENTERPRISE SOFTWARE
+- rule_id: TRAVEL_AVIS
+  pattern: \b(AVIS\s*RENT)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: Avis car hire for cross-state book fair and portrait travel.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - AVIS RENT A CAR CHICAGO
+  - AVIS RENT A CAR SFO
+  negative_examples:
+  - AVIS BUDGET GROUP
+  - AUDIO VIDEO
+- rule_id: TRAVEL_BUDGET_CAR
+  pattern: \b(BUDGET\s*RENT\s*A\s*CAR)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: Budget rental car transport for production crews.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - BUDGET RENT A CAR DFW
+  - BUDGET RENT A CAR ATLANTA
+  negative_examples:
+  - BUDGET INN
+  - BUDGET GROCERY
+- rule_id: TRAVEL_NATIONAL_CAR
+  pattern: \b(NATIONAL\s*CAR\s*RENTAL)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: National Car Rental emerald club vehicle hires for assignments.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - NATIONAL CAR RENTAL ST LOUIS
+  - NATIONAL CAR RENTAL ORD
+  negative_examples:
+  - NATIONAL GEOGRAPHIC
+  - NATIONAL PARK PERMIT
+- rule_id: TRAVEL_ZIPCAR
+  pattern: \b(ZIPCAR)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: Zipcar hourly cargo van hire for studio equipment load-in.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ZIPCAR BOSTON MA
+  - ZIPCAR HOURLY VAN HIRE
+  negative_examples:
+  - ZIPPY DELI
+  - ZIP CODE
+- rule_id: TRAVEL_TURO
+  pattern: \b(TURO\s*(?:INC)?)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.93
+  explanation: Turo vehicle rental platform for remote landscape photo shoots.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - TURO INC SAN FRANCISCO
+  - TURO CAR RENTAL PHOENIX
+  negative_examples:
+  - TURBO TAX
+  - CHEVRON GAS
+- rule_id: TRAVEL_AIRBNB
+  pattern: \b(AIRBNB)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.93
+  explanation: Airbnb lodging for photographer and crew during out-of-town shoots.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - AIRBNB *HM9821SAN FRANCISCO
+  - AIRBNB BOOKING PARIS
+  negative_examples:
+  - AIRPORT TAXI
+  - DELTA AIR
+- rule_id: TRAVEL_VRBO
+  pattern: \b(VRBO)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.93
+  explanation: VRBO vacation property rental for production crew lodging.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - VRBO AUSTIN TX
+  - VRBO VACATION RENTAL
+  negative_examples:
+  - VIRGIN AIR
+  - UBER TRIP
+- rule_id: TRAVEL_MARRIOTT
+  pattern: \b(MARRIOTT|COURTYARD\s*BY\s*MARRIOTT|RESIDENCE\s*INN)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: Marriott hotels overnight lodging during commercial photo tours.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MARRIOTT HOTELS DALLAS TX
+  - COURTYARD BY MARRIOTT ATLANTA
+  negative_examples:
+  - DELTA AIRLINES
+  - STARBUCKS CAFE
+- rule_id: TRAVEL_HILTON
+  pattern: \b(HILTON\s*HOTELS?|DOUBLETREE\s*BY\s*HILTON|HAMPTON\s*INN)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: Hilton and DoubleTree hotel lodging for editorial assignments.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - HILTON HOTELS CHICAGO
+  - HAMPTON INN SEATTLE WA
+  negative_examples:
+  - PARIS HILTON
+  - AIRPORT CAFE
+- rule_id: TRAVEL_HYATT
+  pattern: \b(HYATT\s*HOTELS?|ANDAZ|HYATT\s*REGENCY)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: Hyatt Regency and Andaz hotel lodging for book fair attendance.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - HYATT REGENCY SAN FRANCISCO
+  - ANDAZ HOTEL WEST HOLLYWOOD
+  negative_examples:
+  - HYATT DINER
+  - HOTEL TAX
+- rule_id: TRAVEL_IHG
+  pattern: \b(IHG\s*HOTELS?|INTERCONTINENTAL\s*HOTEL|KIMPTON\s*HOTEL)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: Kimpton and InterContinental hotel accommodation on shoot travel.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - IHG HOTELS ATLANTA GA
+  - KIMPTON HOTEL SAN DIEGO
+  negative_examples:
+  - CONTINENTAL AIRLINES
+  - RESTAURANT
+- rule_id: TRAVEL_ACE_HOTEL
+  pattern: \b(ACE\s*HOTEL)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.94
+  explanation: Ace Hotel creative residency and accommodations for photo projects.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ACE HOTEL BROOKLYN NY
+  - ACE HOTEL NEW ORLEANS
+  negative_examples:
+  - ACE HARDWARE
+  - ACE CAFE
+- rule_id: SHIP_USPS
+  pattern: \b(USPS\s*PO|USPS\.COM|US\s*POSTAL\s*SERVICE)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.95
+  explanation: USPS postal media mail, priority mailers, and international book post.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - USPS PO 3582910 BROOKLYN
+  - USPS.COM POSTAGE CLICKNSHIP
+  negative_examples:
+  - US COPYRIGHT OFFICE
+  - US BANK
+- rule_id: SHIP_UPS_STORE
+  pattern: \b(UPS\s*STORE)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.95
+  explanation: The UPS Store printing, packing, and ground monograph parcel shipping.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - 'UPS STORE #1048 NEW YORK NY'
+  - THE UPS STORE SAN FRANCISCO
+  negative_examples:
+  - UPSTREAM CAFE
+  - SUPERMARKET
+- rule_id: SHIP_UPS_BILLING
+  pattern: \b(UPS\s*(?:BILLING|INTERNET\s*SHIP(?:MENT)?|FREIGHT))\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.95
+  explanation: UPS commercial parcel delivery and freight distribution for book shipments.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - UPS BILLING CENTER ATLANTA
+  - UPS INTERNET SHIPMENT
+  negative_examples:
+  - UPPER CRUST PIZZA
+  - SUPREME COURT
+- rule_id: SHIP_FEDEX
+  pattern: \b(FEDEX\s*(?:OFFICE|EXPRESS|GROUND|FREIGHT)?)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.95
+  explanation: FedEx overnight courier, proof shipping, and gallery crates.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - FEDEX EXPRESS MEMPHIS TN
+  - 'FEDEX OFFICE #0492 NYC'
+  negative_examples:
+  - FEDERAL DEFENSE
+  - CAFE FED
+- rule_id: SHIP_DHL
+  pattern: \b(DHL\s*EXPRESS|DHL\.COM)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.95
+  explanation: DHL Express worldwide courier for international photo book deliveries.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - DHL EXPRESS PLANTATION FL
+  - DHL.COM INT SHIPPING
+  negative_examples:
+  - DELI SHOP
+  - AIRLINE TRIP
+- rule_id: SHIP_PIRATE_SHIP
+  pattern: \b(PIRATESHIP|PIRATE\s*SHIP)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.95
+  explanation: Pirate Ship discounted commercial shipping labels for photobook orders.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PIRATESHIP GREEN BAY WI
+  - PIRATE SHIP POSTAGE
+  negative_examples:
+  - PIRATE COVE DINER
+  - CRUISE SHIP
+- rule_id: SHIP_SHIPSTATION
+  pattern: \b(SHIPSTATION)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.95
+  explanation: ShipStation order fulfillment and e-commerce shipping automation.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SHIPSTATION AUSTIN TX
+  - SHIPSTATION POSTAGE REFILL
+  negative_examples:
+  - TRAIN STATION
+  - GAS STATION
+- rule_id: SHIP_STAMPS_COM
+  pattern: \b(STAMPS\.COM)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.95
+  explanation: Stamps.com online meter postage and parcel insurance.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - STAMPS.COM EL SEGUNDO CA
+  - STAMPS.COM POSTAGE MONTHLY
+  negative_examples:
+  - STAMP COLLECTING
+  - GROCERY
+- rule_id: SHIP_ULINE
+  pattern: \b(ULINE\s*(?:SHIPPING|CATALOG)?)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.95
+  explanation: Uline rigid book mailers, bubble wrap, stretch film, and shipping boxes.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ULINE SHIPPING SUPPLIES WI
+  - ULINE CATALOG ORDER
+  negative_examples:
+  - ONLINE CAFE
+  - AIRLINE TRIP
+- rule_id: SHIP_ECOENCLOSE
+  pattern: \b(ECOENCLOSE)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.95
+  explanation: EcoEnclose sustainable recycled corrugated book boxes and paper tape.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ECOENCLOSE LOUISVILLE CO
+  - ECOENCLOSE PACKAGING
+  negative_examples:
+  - ECO CLEANERS
+  - ENCLOSURE HARDWARE
+- rule_id: SHIP_PACKLANE
+  pattern: \b(PACKLANE)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.95
+  explanation: Packlane custom printed shipping mailer boxes for deluxe monograph
+    editions.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PACKLANE BERKELEY CA
+  - PACKLANE CUSTOM BOXES
+  negative_examples:
+  - PACKING PEANUTS
+  - BOWLING LANE
+- rule_id: SHIP_CHIT_CHATS
+  pattern: \b(CHIT\s*CHATS)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.94
+  explanation: Chit Chats low-cost cross-border fulfillment for Canadian art book
+    sales.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CHIT CHATS RICHMOND BC
+  - CHIT CHATS SHIPPING LABELS
+  negative_examples:
+  - CHAT CAFE
+  - CHIT CHAT DINER
+- rule_id: SHIP_CLEARHARMONY
+  pattern: \b(CLEARHARMONY(?:\s*PACKAGING)?)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.94
+  explanation: ClearHarmony archival protective print sleeves and poly bags.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CLEARHARMONY PACKAGING NY
+  - CLEARHARMONY SLEEVES
+  negative_examples:
+  - HARMONY CAFE
+  - CLEAR WATER
+- rule_id: SHIP_GAYLORD
+  pattern: \b(GAYLORD\s*ARCHIVAL)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.95
+  explanation: Gaylord Archival acid-free negative storage boxes and mylar sleeves.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - GAYLORD ARCHIVAL SYRACUSE NY
+  - GAYLORD ARCHIVAL BOXES
+  negative_examples:
+  - GAYLORD HOTEL
+  - LORD & TAYLOR
+- rule_id: SHIP_STAPLES
+  pattern: \b(STAPLES(?:\.COM|\s*STORE|\s*DIRECT)?)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.92
+  explanation: Staples office supplies, shipping tape, and book packaging cartons.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - 'STAPLES #0921 BROOKLYN NY'
+  - STAPLES.COM SHIPPING SUPPLIES
+  negative_examples:
+  - STARBUCKS COFFEE
+  - APPLE STORE
+- rule_id: SHIP_OFFICE_DEPOT
+  pattern: \b(OFFICE\s*DEPOT|OFFICEMAX)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.92
+  explanation: Office Depot packaging bubble, packing tape, and document shipping.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - 'OFFICE DEPOT #2841 MIAMI FL'
+  - OFFICEMAX STORE CHICAGO
+  negative_examples:
+  - POST OFFICE
+  - DEPOT DINER
+- rule_id: PROPS_STRAND
+  pattern: \b(STRAND\s*BOOK\s*STORE)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.95
+  explanation: Strand Book Store reference monographs and photography art volumes.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - STRAND BOOK STORE 828 BROADWAY NY
+  - STRAND BOOK STORE NYC
+  negative_examples:
+  - STRAND HOTEL
+  - BEACH STRAND
+- rule_id: PROPS_PRINTED_MATTER
+  pattern: \b(PRINTED\s*MATTER(?!\s*FAIR))\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.95
+  explanation: Printed Matter artists' books, independent photo monographs, and publications.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PRINTED MATTER NYC CHELSEA
+  - PRINTED MATTER BOOKS NY
+  negative_examples:
+  - PRINTED MATTER FAIR
+  - PRINT SHOP
+- rule_id: PROPS_DASHWOOD
+  pattern: \b(DASHWOOD\s*BOOKS)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.96
+  explanation: Dashwood Books specialized contemporary photography bookstore NYC.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - DASHWOOD BOOKS NEW YORK NY
+  - DASHWOOD BOOKS SOHO
+  negative_examples:
+  - DOORDASH
+  - WOOD WORKSHOP
+- rule_id: PROPS_ARCANA
+  pattern: \b(ARCANA\s*BOOKS)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.96
+  explanation: 'Arcana: Books on the Arts 20th century photography books and rare
+    catalogues.'
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ARCANA BOOKS CULVER CITY CA
+  - ARCANA BOOKS ON THE ARTS
+  negative_examples:
+  - ARCADE GAME
+  - RESTAURANT
+- rule_id: PROPS_POWELLS
+  pattern: \b(POWELLS\s*BOOKS|POWELL'?S\s*BOOKS)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.94
+  explanation: Powell's City of Books reference photobooks and visual art titles.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - POWELLS BOOKS PORTLAND OR
+  - POWELL'S BOOKS CITY OF BOOKS
+  negative_examples:
+  - POWER COMPANY
+  - HOTEL ROOM
+- rule_id: PROPS_KINOKUNIYA
+  pattern: \b(KINOKUNIYA\s*BOOK)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.95
+  explanation: Kinokuniya Japanese photography monographs, paper, and binding reference.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - KINOKUNIYA BOOK STORES NY
+  - KINOKUNIYA BOOK STORE LA
+  negative_examples:
+  - JAPAN AIR
+  - SUSHI BAR
+- rule_id: PROPS_MCNALLY
+  pattern: \b(MCNALLY\s*JACKSON)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.94
+  explanation: McNally Jackson Books visual arts section and literature research.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MCNALLY JACKSON BOOKS NYC
+  - MCNALLY JACKSON SOHO
+  negative_examples:
+  - JACKSON DINER
+  - HOTEL
+- rule_id: PROPS_APERTURE
+  pattern: \b(APERTURE\s*FOUNDATION)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.96
+  explanation: Aperture Foundation photography monographs and magazine subscriptions.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - APERTURE FOUNDATION NY
+  - APERTURE FOUNDATION BOOKS
+  negative_examples:
+  - APERTURE CAFE
+  - CAMERA APERTURE
+- rule_id: PROPS_TASCHEN
+  pattern: \b(TASCHEN\s*(?:STORE|BOOKS|DIRECT))\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.95
+  explanation: Taschen publishing XXL photography monographs and retrospective art
+    books.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - TASCHEN STORE NEW YORK
+  - TASCHEN BOOKS BEVERLY HILLS
+  negative_examples:
+  - TASCHEN DELI
+  - AIRLINE TRIP
+- rule_id: PROPS_STEIDL
+  pattern: \b(STEIDL\s*(?:VERLAG|BOOKS)?)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.96
+  explanation: Steidl Verlag fine art photobooks and master printing reference monographs.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - STEIDL VERLAG GOTTINGEN
+  - STEIDL BOOKS DIRECT
+  negative_examples:
+  - STEEL COMPANY
+  - STEAK HOUSE
+- rule_id: PROPS_MACK
+  pattern: \b(MACK\s*BOOKS)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.96
+  explanation: MACK independent publisher of contemporary photography books.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MACK BOOKS LONDON
+  - MACK BOOKS DIRECT ORDER
+  negative_examples:
+  - MACK TRUCKS
+  - MAC COMPUTERS
+- rule_id: PROPS_CHOSE_COMMUNE
+  pattern: \b(CHOSE\s*COMMUNE)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.96
+  explanation: Chose Commune photobook publisher research and monographs.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CHOSE COMMUNE MARSEILLE
+  - CHOSE COMMUNE BOOKS
+  negative_examples:
+  - CHOSEN CAFE
+  - HOTEL ROOM
+- rule_id: PROPS_PHAIDON
+  pattern: \b(PHAIDON\s*PRESS|PHAIDON\.COM)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.95
+  explanation: Phaidon Press photography surveys, architecture, and visual arts monographs.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PHAIDON PRESS NEW YORK
+  - PHAIDON.COM ART BOOKS
+  negative_examples:
+  - PHANTOM THEATER
+  - UBER TRIP
+- rule_id: PROPS_IDEA_BOOKS
+  pattern: \b(IDEA\s*BOOKS\s*(?:LTD|STORE))\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.95
+  explanation: Idea Books super-rare fashion and fine-art photography volumes.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - IDEA BOOKS LTD LONDON
+  - IDEA BOOKS STORE NYC
+  negative_examples:
+  - IDEA CONSULTING
+  - GROCERY
+- rule_id: PROPS_PROP_WORKSHOP
+  pattern: \b(PROP\s*WORKSHOP)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.95
+  explanation: Prop Workshop studio tabletop surfaces, pedestals, and styling items.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PROP WORKSHOP NYC
+  - PROP WORKSHOP SURFACE RENTAL
+  negative_examples:
+  - AUTO WORKSHOP
+  - PROPERTY TAX
+- rule_id: PROPS_FILM_FURNITURE
+  pattern: \b(FILM\s*AND\s*FURNITURE)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.94
+  explanation: Film and Furniture vintage cinema styling pieces and set decor.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - FILM AND FURNITURE LONDON
+  - FILM AND FURNITURE PROPS
+  negative_examples:
+  - FILM LAB
+  - IKEA FURNITURE
+- rule_id: PROPS_MOOD_FABRICS
+  pattern: \b(MOOD\s*FABRICS)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.95
+  explanation: Mood Fabrics set draping, backdrop textiles, and costume styling fabric.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MOOD FABRICS NYC 212-730-5003
+  - MOOD FABRICS ONLINE
+  negative_examples:
+  - MOODY BLUES
+  - CAFE MOOD
+- rule_id: PROPS_BJ_FABRICS
+  pattern: \b(B&J\s*FABRICS|B\s*AND\s*J\s*FABRICS)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.95
+  explanation: B&J Fabrics professional photo set draping and stylist textiles.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - B&J FABRICS NEW YORK NY
+  - B AND J FABRICS GARMENT
+  negative_examples:
+  - BJ WHOLESALE
+  - RESTAURANT
+- rule_id: PROPS_HOME_DEPOT
+  pattern: \b(HOME\s*DEPOT\s*SET\s*BUILD|HOME\s*DEPOT\s*STUDIO)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.92
+  explanation: The Home Depot lumber, flats, and paint for photo set construction.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - HOME DEPOT SET BUILD BROOKLYN
+  - HOME DEPOT STUDIO WOOD
+  negative_examples:
+  - 'HOME DEPOT #1204'
+  - DEPOT DINER
+- rule_id: PROPS_LOWES
+  pattern: \b(LOWE'?S\s*(?:STUDIO|SET)\s*BUILD)\b
+  category: Props, Styling & Reference Books
+  base_confidence: 0.92
+  explanation: Lowe's materials for custom cyclorama wall buildouts and set framing.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - 'LOWES STUDIO BUILD #0482'
+  - LOWE'S SET BUILD NYC
+  negative_examples:
+  - 'LOWES STORE #0921'
+  - LOWEPRO BAGS
+- rule_id: MEALS_EZCATER
+  pattern: \b(EZCATER)\b
+  category: Client & Crew Meals (50%)
+  base_confidence: 0.94
+  explanation: ezCater shoot crew lunch catering and on-set craft services.
+  default_type: expense
+  tax_flag: MEALS_50_PERCENT
+  positive_examples:
+  - EZCATER*SHOOT CREW LUNCH
+  - EZCATER BOSTON MA
+  negative_examples:
+  - EASY JET
+  - CATERPILLAR TRACTOR
+- rule_id: MEALS_PANERA_CAT
+  pattern: \b(PANERA\s*CATERING)\b
+  category: Client & Crew Meals (50%)
+  base_confidence: 0.93
+  explanation: Panera Catering boxed lunches for full-day commercial production crews.
+  default_type: expense
+  tax_flag: MEALS_50_PERCENT
+  positive_examples:
+  - 'PANERA CATERING ORDER #481'
+  - PANERA CATERING CREW
+  negative_examples:
+  - 'PANERA BREAD #104'
+  - CAFE PANERA
+- rule_id: MEALS_SWEETGREEN_CAT
+  pattern: \b(SWEETGREEN\s*CATERING)\b
+  category: Client & Crew Meals (50%)
+  base_confidence: 0.93
+  explanation: Sweetgreen Catering salad bowls delivered for set crew and client meals.
+  default_type: expense
+  tax_flag: MEALS_50_PERCENT
+  positive_examples:
+  - SWEETGREEN CATERING NYC
+  - SWEETGREEN CATERING LA
+  negative_examples:
+  - 'SWEETGREEN #124 SOHO'
+  - GREEN GROCERY
+- rule_id: MEALS_WHOLE_FOODS_CAT
+  pattern: \b(WHOLE\s*FOODS\s*CATERING)\b
+  category: Client & Crew Meals (50%)
+  base_confidence: 0.93
+  explanation: Whole Foods Market catering platters for client photo review meetings.
+  default_type: expense
+  tax_flag: MEALS_50_PERCENT
+  positive_examples:
+  - WHOLE FOODS CATERING NYC
+  - WHOLE FOODS CATERING PLATTER
+  negative_examples:
+  - 'WHOLE FOODS STORE #048'
+  - WHOLE MILK
+- rule_id: MEALS_SEAMLESS_CORP
+  pattern: \b(SEAMLESS\s*CORPORATE|SEAMLESS\*SHOOT)\b
+  category: Client & Crew Meals (50%)
+  base_confidence: 0.92
+  explanation: Seamless corporate account meal delivery for late editorial studio
+    edits.
+  default_type: expense
+  tax_flag: MEALS_50_PERCENT
+  positive_examples:
+  - SEAMLESS CORPORATE CATERING
+  - SEAMLESS*SHOOT CREW DINNER
+  negative_examples:
+  - SEAMLESS PAPER
+  - SEAMSTRESS
+- rule_id: MEALS_GRUBHUB_CORP
+  pattern: \b(GRUBHUB\s*CORPORATE|GRUBHUB\*CREW)\b
+  category: Client & Crew Meals (50%)
+  base_confidence: 0.92
+  explanation: Grubhub Corporate group dining order for studio crew lunch.
+  default_type: expense
+  tax_flag: MEALS_50_PERCENT
+  positive_examples:
+  - GRUBHUB CORPORATE ORDERS
+  - GRUBHUB*CREW LUNCH NYC
+  negative_examples:
+  - 'GRUBHUB #0981'
+  - RESTAURANT GRUB
+- rule_id: MEALS_DOORDASH_CREW
+  pattern: \b(DOORDASH\*CREW|DOORDASH\s*FOR\s*WORK)\b
+  category: Client & Crew Meals (50%)
+  base_confidence: 0.92
+  explanation: DoorDash for Work catering group orders for commercial studio team.
+  default_type: expense
+  tax_flag: MEALS_50_PERCENT
+  positive_examples:
+  - DOORDASH*CREW LUNCH DOWNTOWN
+  - DOORDASH FOR WORK PRODUCTION
+  negative_examples:
+  - DOORDASH*RESTAURANT
+  - DASHWOOD BOOKS
+- rule_id: MEALS_CAVIAR_CAT
+  pattern: \b(CAVIAR\s*CATERING|CAVIAR\*CREW)\b
+  category: Client & Crew Meals (50%)
+  base_confidence: 0.93
+  explanation: Caviar premium shoot lunch catering for high-fashion editorial clients.
+  default_type: expense
+  tax_flag: MEALS_50_PERCENT
+  positive_examples:
+  - CAVIAR CATERING SAN FRANCISCO
+  - CAVIAR*CREW LUNCH NYC
+  negative_examples:
+  - 'CAVIAR DINNER #092'
+  - FISH MARKET
+- rule_id: MEALS_DIG_INN_CAT
+  pattern: \b(DIG\s*INN\s*CATERING|DIG\s*CATERING)\b
+  category: Client & Crew Meals (50%)
+  base_confidence: 0.93
+  explanation: Dig Catering farm-to-table lunch buffet for photography studio crew.
+  default_type: expense
+  tax_flag: MEALS_50_PERCENT
+  positive_examples:
+  - DIG INN CATERING BROOKLYN
+  - DIG CATERING NYC
+  negative_examples:
+  - 'DIG INN #082'
+  - DIGITAL OCEAN
+- rule_id: MEALS_JOES_PIZZA_CAT
+  pattern: \b(JOES\s*PIZZA\s*CATERING)\b
+  category: Client & Crew Meals (50%)
+  base_confidence: 0.92
+  explanation: Joe's Pizza catering platters on-set lunch for shoot assistants.
+  default_type: expense
+  tax_flag: MEALS_50_PERCENT
+  positive_examples:
+  - JOES PIZZA CATERING NYC
+  - JOES PIZZA CATERING CREW
+  negative_examples:
+  - JOES CAFE 9921
+  - PIZZA HUT
+- rule_id: MKT_META_ADS
+  pattern: \b(META\s*PLATFORMS\s*\*?ADS(?:\w*|\b)|FACEBK\s*\*?ADS(?:\w*|\b))\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.95
+  explanation: Meta / Instagram paid advertising for studio print sales and book campaigns.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - META PLATFORMS *ADS10482
+  - FACEBK *ADS928194
+  negative_examples:
+  - FACEBOOK PORTAL
+  - META QUEST STORE
+- rule_id: MKT_INSTA_ADS
+  pattern: \b(INSTAGRAM\s*\*?ADS(?:\w*|\b))\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.95
+  explanation: Instagram sponsored ads promoting portrait bookings and monograph pre-orders.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - INSTAGRAM *ADS94819
+  - INSTAGRAM ADS PROMO
+  negative_examples:
+  - INSTA PRINT
+  - COFFEE SHOP
+- rule_id: MKT_GOOGLE_ADS
+  pattern: \b(GOOGLE\s*\*?ADS(?:\w*|\b))\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.95
+  explanation: Google Search Ads targeting commercial photography client commissions.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - GOOGLE *ADS9481920
+  - GOOGLE ADS CAMPAIGN
+  negative_examples:
+  - GOOGLE WORKSPACE
+  - GOOGLE DRIVE
+- rule_id: MKT_PINTEREST_ADS
+  pattern: \b(PINTEREST\s*\*?ADS(?:\w*|\b))\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.95
+  explanation: Pinterest Ads promoting bridal editorial portfolios and studio prints.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PINTEREST *ADS48291
+  - PINTEREST ADS BILLING
+  negative_examples:
+  - PINTEREST APP
+  - RESTAURANT
+- rule_id: MKT_LINKEDIN_ADS
+  pattern: \b(LINKEDIN\s*\*?ADS(?:\w*|\b))\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.95
+  explanation: LinkedIn sponsored content targeting corporate art directors and agencies.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - LINKEDIN *ADS84910
+  - LINKEDIN ADS SPONSORED
+  negative_examples:
+  - LINKEDIN PREMIUM
+  - UBER TRIP
+- rule_id: MKT_TIKTOK_ADS
+  pattern: \b(TIKTOK\s*\*?ADS(?:\w*|\b)|BYTEDANCE\s*\*?ADS(?:\w*|\b))\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.94
+  explanation: TikTok Ads campaigns promoting Kickstarter photobook launches.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - TIKTOK *ADS982194
+  - BYTEDANCE *ADS8491
+  negative_examples:
+  - TIKTOK SHOPPING
+  - RESTAURANT
+- rule_id: MKT_NY_BOOK_FAIR
+  pattern: \b(NY\s*ART\s*BOOK\s*FAIR|NYABF)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.96
+  explanation: NY Art Book Fair exhibitor booth registration and table fee.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - NY ART BOOK FAIR BOOTH FEE
+  - NYABF EXHIBITOR REGISTRATION
+  negative_examples:
+  - NY POST
+  - BOOKBABY
+- rule_id: MKT_LA_BOOK_FAIR
+  pattern: \b(LA\s*ART\s*BOOK\s*FAIR|LAABF)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.96
+  explanation: LA Art Book Fair printed matter exhibitor space and directory listing.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - LA ART BOOK FAIR TABLE
+  - LAABF EXHIBITOR FEE
+  negative_examples:
+  - LA FITNESS
+  - UBER TRIP
+- rule_id: MKT_PARIS_PHOTO
+  pattern: \b(PARIS\s*PHOTO\s*BOOTH|PARIS\s*PHOTO\s*ENTRY)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.96
+  explanation: Paris Photo international art fair book publisher exhibition space.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PARIS PHOTO BOOTH REGISTRATION
+  - PARIS PHOTO ENTRY FEE
+  negative_examples:
+  - PARIS BAGUETTE
+  - HOTEL ROOM
+- rule_id: MKT_POLYCOPIES
+  pattern: \b(POLYCOPIES)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.96
+  explanation: Polycopies Paris photobook publishing festival participation fee.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - POLYCOPIES PARIS TABLE FEE
+  - POLYCOPIES FESTIVAL STAND
+  negative_examples:
+  - PHOTOCOPY STORE
+  - AIRLINE TRIP
+- rule_id: MKT_PRINTED_MATTER_FAIR
+  pattern: \b(PRINTED\s*MATTER\s*FAIR)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.96
+  explanation: Printed Matter art book fair exhibitor fee.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PRINTED MATTER FAIR BOOTH
+  - PRINTED MATTER FAIR NYC
+  negative_examples:
+  - PRINTED MATTER NYC CHELSEA
+  - PRINT STORE
+- rule_id: MKT_MOO
+  pattern: \b(MOO\.COM(?!\s*BOOK))\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.94
+  explanation: Moo.com foil business cards, promo postcards, and portfolio mailers.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MOO.COM PROMO CARDS
+  - MOO.COM PRINTED POSTCARDS
+  negative_examples:
+  - MOO.COM BOOK
+  - MILK GROCERY
+- rule_id: MKT_VISTAPRINT
+  pattern: \b(VISTAPRINT)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.93
+  explanation: VistaPrint promotional signage, banners, and launch event handouts.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - VISTAPRINT CAMPAIGN SIGNS
+  - VISTAPRINT POSTCARDS
+  negative_examples:
+  - VISTA HOTEL
+  - AIRLINE TRIP
+- rule_id: MKT_MAILCHIMP
+  pattern: \b(MAILCHIMP)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.95
+  explanation: Mailchimp marketing newsletter automation and subscriber campaigns.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MAILCHIMP MONTHLY ATLANTA
+  - MAILCHIMP STANDARD NEWSLETTER
+  negative_examples:
+  - CHIMP CAFE
+  - POST OFFICE
+- rule_id: MKT_SUBSTACK_SUB
+  pattern: \b(SUBSTACK\s*PUBLISHER|SUBSTACK\s*MARKETING)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.94
+  explanation: Substack custom domain and publisher marketing promotional features.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SUBSTACK PUBLISHER TOOLS
+  - SUBSTACK MARKETING FEE
+  negative_examples:
+  - SUBSTACK PAYOUT
+  - SUBWAY SANDWICH
+- rule_id: MKT_FLODESK
+  pattern: \b(FLODESK)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.95
+  explanation: Flodesk visual email marketing and portfolio newsletter service.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - FLODESK INC SAN FRANCISCO
+  - FLODESK EMAIL SUBSCRIPTION
+  negative_examples:
+  - FLOW CAFE
+  - FLORIST
+- rule_id: MKT_SQUARESPACE
+  pattern: \b(SQUARESPACE)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.95
+  explanation: Squarespace studio website hosting, portfolio gallery, and domain name.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SQUARESPACE INC NEW YORK
+  - SQUARESPACE MONTHLY HOSTING
+  negative_examples:
+  - SQUARE INC
+  - TIMES SQUARE DINER
+- rule_id: MKT_CARGO
+  pattern: \b(CARGO\s*(?:SITE|COLLECTIVE))\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.95
+  explanation: Cargo Collective portfolio web publishing for visual artists.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CARGO SITE SUBSCRIPTION
+  - CARGO COLLECTIVE LA
+  negative_examples:
+  - CARGO VAN RENTAL
+  - AIRLINE CARGO
+- rule_id: MKT_FORMAT
+  pattern: \b(FORMAT\.COM|FORMAT\s*PORTFOLIO)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.95
+  explanation: Format.com online portfolio website for professional photographers.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - FORMAT.COM TORONTO ON
+  - FORMAT PORTFOLIO SUBSCRIPTION
+  negative_examples:
+  - FILE FORMAT
+  - HOTEL ROOM
+- rule_id: MKT_SMUGMUG
+  pattern: \b(SMUGMUG)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.95
+  explanation: SmugMug online photo showcase, print sales storefront, and hosting.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SMUGMUG INC MOUNTAIN VIEW
+  - SMUGMUG PRO PORTFOLIO
+  negative_examples:
+  - MUG SHOP
+  - COFFEE CAFE
+- rule_id: MKT_ZENFOLIO
+  pattern: \b(ZENFOLIO)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.95
+  explanation: Zenfolio photography business website and client proofing storefront.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ZENFOLIO INC MENLO PARK
+  - ZENFOLIO PRO PLAN
+  negative_examples:
+  - ZEN BISTRO
+  - PORTFOLIO CAFE
+- rule_id: MKT_PHOTOSHELTER
+  pattern: \b(PHOTOSHELTER)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.95
+  explanation: PhotoShelter professional photography digital asset management and
+    site.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PHOTOSHELTER NEW YORK NY
+  - PHOTOSHELTER PORTFOLIO PRO
+  negative_examples:
+  - PHOTO BOOTH
+  - ANIMAL SHELTER
+- rule_id: MKT_SHUTTERSTOCK
+  pattern: \b(SHUTTERSTOCK\s*(?:FOOTAGE|STOCK|SUB))\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.94
+  explanation: Shutterstock reference imagery and design stock assets for monograph
+    layout.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SHUTTERSTOCK STOCK SUBSCRIPTION
+  - SHUTTERSTOCK FOOTAGE NYC
+  negative_examples:
+  - SHUTTER CAMERA STORE
+  - RESTAURANT
+- rule_id: MKT_GETTY
+  pattern: \b(GETTY\s*IMAGES|ISTOCK\s*BY\s*GETTY)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.94
+  explanation: Getty Images / iStock licensing archival reference assets for publications.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - GETTY IMAGES SEATTLE WA
+  - ISTOCK BY GETTY SUBSCRIPTION
+  negative_examples:
+  - GETTY MUSEUM CAFE
+  - GAS STATION
+- rule_id: MKT_ADOBE_STOCK
+  pattern: \b(ADOBE\s*\*?STOCK)\b
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.95
+  explanation: Adobe Stock design assets and typography for photobook marketing decks.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ADOBE *STOCK SUBSCRIPTION
+  - ADOBE STOCK 10 ASSETS
+  negative_examples:
+  - ADOBE CREATIVE CLOUD
+  - STOCK MARKET
+- rule_id: MKT_UNSPLASH
+  pattern: \b(UNSPLASH\s*(?:PLUS|\+))
+  category: Marketing, Book Fairs & Portfolio
+  base_confidence: 0.94
+  explanation: Unsplash+ commercial license subscription for pitch presentation backgrounds.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - UNSPLASH PLUS MONTREAL
+  - UNSPLASH+ COMMERCIAL SUB
+  negative_examples:
+  - SPLASH WATER PARK
+  - COFFEE SHOP
+- rule_id: INS_HISCOX
+  pattern: \b(HISCOX\s*INS(?:URANCE)?)\b
+  category: Insurance, Copyright & Guilds
+  base_confidence: 0.96
+  explanation: Hiscox commercial general liability and studio property insurance (Line
+    15).
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - HISCOX INSURANCE ATLANTA GA
+  - HISCOX INS MONTHLY PREMIUM
+  negative_examples:
+  - HEALTH INSURANCE
+  - HOTEL ROOM
+- rule_id: INS_ATHOS
+  pattern: \b(ATHOS\s*INSURANCE|TCP\*ATHOS)\b
+  category: Insurance, Copyright & Guilds
+  base_confidence: 0.96
+  explanation: Athos Insurance inland marine worldwide photography gear floater.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ATHOS INSURANCE PASADENA CA
+  - TCP*ATHOS GEAR POLICY
+  negative_examples:
+  - ATHLETIC CLUB
+  - UBER TRIP
+- rule_id: INS_THIMBLE
+  pattern: \b(THIMBLE\s*INS(?:URANCE)?)\b
+  category: Insurance, Copyright & Guilds
+  base_confidence: 0.95
+  explanation: Thimble on-demand certificates of insurance (COI) for location shoots.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - THIMBLE INSURANCE NYC
+  - THIMBLE INS COI SHOOT
+  negative_examples:
+  - THIMBLE SEWING
+  - RESTAURANT
+- rule_id: INS_HILL_USHER
+  pattern: \b(HILL\s*&\s*USHER|PACKAGE\s*CHOICE)\b
+  category: Insurance, Copyright & Guilds
+  base_confidence: 0.96
+  explanation: Hill & Usher Package Choice comprehensive photo studio insurance package.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - HILL & USHER PHOENIX AZ
+  - PACKAGE CHOICE INSURANCE
+  negative_examples:
+  - HILL RESORT
+  - USHER CONCERT
+- rule_id: INS_FRONT_ROW
+  pattern: \b(FRONT\s*ROW\s*INSURANCE)\b
+  category: Insurance, Copyright & Guilds
+  base_confidence: 0.96
+  explanation: Front Row Insurance photography short-term shoot liability and camera
+    gear.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - FRONT ROW INSURANCE TORONTO
+  - FRONT ROW INSURANCE SHORT TERM
+  negative_examples:
+  - FRONT ROW THEATER
+  - AIRLINE TRIP
+- rule_id: INS_PPA
+  pattern: \b(PPA\s*MEMB|PROFESSIONAL\s*PHOTOG\s*AMERICA)\b
+  category: Insurance, Copyright & Guilds
+  base_confidence: 0.96
+  explanation: Professional Photographers of America (PPA) guild dues and gear protection.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PPA MEMB ATLANTA GA
+  - PROFESSIONAL PHOTOG AMERICA DUES
+  negative_examples:
+  - PPA AUTO REPAIR
+  - PARKING
+- rule_id: INS_ASMP
+  pattern: \b(ASMP\s*MEMB|AMERICAN\s*SOC\s*MEDIA\s*PHOTOG)\b
+  category: Insurance, Copyright & Guilds
+  base_confidence: 0.96
+  explanation: American Society of Media Photographers legal guild dues and business
+    advocacy.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - ASMP MEMB PHILADELPHIA PA
+  - AMERICAN SOC MEDIA PHOTOG DUES
+  negative_examples:
+  - ASMP RECORD STORE
+  - COFFEE SHOP
+- rule_id: INS_APA
+  pattern: \b(APA\s*NATIONAL|AMERICAN\s*PHOTOGRAPHIC\s*ARTISTS)\b
+  category: Insurance, Copyright & Guilds
+  base_confidence: 0.96
+  explanation: American Photographic Artists (APA) commercial photography trade guild.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - APA NATIONAL NEW YORK
+  - AMERICAN PHOTOGRAPHIC ARTISTS DUES
+  negative_examples:
+  - APARTMENT RENT
+  - GAS STATION
+- rule_id: INS_NPPA
+  pattern: \b(NPPA\s*MEMB|NAT\s*PRESS\s*PHOTOG)\b
+  category: Insurance, Copyright & Guilds
+  base_confidence: 0.96
+  explanation: National Press Photographers Association press credentials and advocacy.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - NPPA MEMB ATHENS GA
+  - NAT PRESS PHOTOG DUES
+  negative_examples:
+  - NAPA AUTO PARTS
+  - UBER TRIP
+- rule_id: LEGAL_COPYRIGHT
+  pattern: \b(US\s*COPYRIGHT\s*OFFICE|COPYRIGHT\.GOV)\b
+  category: Insurance, Copyright & Guilds
+  base_confidence: 0.96
+  explanation: US Copyright Office statutory group registration of published photographs.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - US COPYRIGHT OFFICE WASHINGTON DC
+  - COPYRIGHT.GOV REGISTRATION FEE
+  negative_examples:
+  - USPS POSTAGE
+  - COPY CENTER
+- rule_id: LEGAL_BOWKER
+  pattern: \b(BOWKER\s*ISBN|MYIDENTIFIERS\.COM)\b
+  category: Insurance, Copyright & Guilds
+  base_confidence: 0.96
+  explanation: Bowker MyIdentifiers ISBN assignment and barcode registration for monographs.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - BOWKER ISBN NEW PROVIDENCE NJ
+  - MYIDENTIFIERS.COM ISBN 10 PACK
+  negative_examples:
+  - BOWLING ALLEY
+  - BOOK STORE
+- rule_id: LEGAL_VLA
+  pattern: \b(VOLUNTEER\s*LAWYERS\s*FOR\s*THE\s*ARTS|VLA\s*LEGAL)\b
+  category: Insurance, Copyright & Guilds
+  base_confidence: 0.95
+  explanation: Volunteer Lawyers for the Arts legal consultation and copyright dispute
+    review.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - VOLUNTEER LAWYERS FOR THE ARTS NY
+  - VLA LEGAL CONSULTATION
+  negative_examples:
+  - VOLUNTEER RESCUE
+  - LAWYER PERSONAL
+- rule_id: FEE_STRIPE
+  pattern: \b(STRIPE\s*FEE)\b
+  category: Bank & Processing Fees
+  base_confidence: 0.96
+  explanation: Stripe credit card processing and chargeback fees (Line 10).
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - STRIPE FEE DEDUCTION
+  - STRIPE FEE CHG
+  negative_examples:
+  - STRIPE TRANSFER
+  - STRIPE PAYOUT
+- rule_id: FEE_SQUARE
+  pattern: \b(SQUARE\s*PROCESSING\s*FEE|SQUAREUP\s*FEE)\b
+  category: Bank & Processing Fees
+  base_confidence: 0.96
+  explanation: Square reader transaction processing fee for on-site book sales.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SQUARE PROCESSING FEE
+  - SQUAREUP FEE DEDUCT
+  negative_examples:
+  - SQUAREUP PAYOUT
+  - SQUARE RESTAURANT
+- rule_id: FEE_PAYPAL
+  pattern: \b(PAYPAL\s*MERCHANT\s*FEE)\b
+  category: Bank & Processing Fees
+  base_confidence: 0.96
+  explanation: PayPal business merchant transaction and international fee.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PAYPAL MERCHANT FEE
+  - PAYPAL MERCHANT FEE INT
+  negative_examples:
+  - PAYPAL *JOHN DOE
+  - PAYPAL REFUND
+- rule_id: FEE_MERCURY
+  pattern: \b(MERCURY\s*BANK\s*WIRE\s*FEE|MERCURY\s*FEE)\b
+  category: Bank & Processing Fees
+  base_confidence: 0.96
+  explanation: Mercury business checking domestic wire or international FX fee.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - MERCURY BANK WIRE FEE
+  - MERCURY FEE MONTHLY
+  negative_examples:
+  - MERCURY RETROGRADE
+  - CHECKING TRANSFER
+- rule_id: FEE_CHASE_WIRE
+  pattern: \b(CHASE\s*WIRE\s*FEE|OUTGOING\s*WIRE\s*FEE|INCOMING\s*WIRE\s*FEE|DOMESTIC\s*(?:INCOMING\s*)?WIRE\s*FEE|WIRE\s*TRANSFER\s*FEE)\b
+  category: Bank & Processing Fees
+  base_confidence: 0.96
+  explanation: Commercial bank wire transfer and processing fee.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - CHASE WIRE FEE OUTGOING
+  - OUTGOING WIRE FEE CHASE
+  - DOMESTIC INCOMING WIRE FEE
+  negative_examples:
+  - CHASE CREDIT CARD AUTOPAY
+  - CHASE ATM
+- rule_id: FEE_AMEX_FX
+  pattern: \b(AMEX\s*FOREIGN\s*TX\s*FEE|FOREIGN\s*TRANSACTION\s*FEE)\b
+  category: Bank & Processing Fees
+  base_confidence: 0.96
+  explanation: Foreign transaction currency conversion fee for European shoots.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - AMEX FOREIGN TX FEE
+  - FOREIGN TRANSACTION FEE AMEX
+  negative_examples:
+  - AMEX PAYMENT
+  - DELTA AIRLINES
+- rule_id: FEE_WISE
+  pattern: \b(WISE\s*TRANSFER\s*FEE|TRANSFERWISE\s*FEE)\b
+  category: Bank & Processing Fees
+  base_confidence: 0.96
+  explanation: Wise international currency conversion fee for foreign photo assignments.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - WISE TRANSFER FEE EUR
+  - TRANSFERWISE FEE DEDUCTION
+  negative_examples:
+  - WISE RESTAURANT
+  - TRANSFER TO SAVINGS
+- rule_id: FEE_BREX
+  pattern: \b(BREX\s*FEE)\b
+  category: Bank & Processing Fees
+  base_confidence: 0.96
+  explanation: Brex business corporate card foreign wire or service fee.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - BREX FEE INT WIRE
+  - BREX FEE WIRE OUT
+  negative_examples:
+  - BREX PAYOUT
+  - BREAK CAFE
+- rule_id: INC_HONEYBOOK
+  pattern: \b(HONEYBOOK\s*\*?\s*(?:CLIENT\s*)?PAYOUT)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: Client photography shoot retainer and creative commission payout.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - HONEYBOOK *PAYOUT 98214
+  - HONEYBOOK CLIENT PAYOUT ACH
+  negative_examples:
+  - HONEYBOOK SUBSCRIPTION
+  - HONEY CAFE
+- rule_id: INC_STRIPE_PAYOUT
+  pattern: \b(STRIPE\s*\*?\s*TRANSFER|STRIPE\s*\*?\s*PAYOUT)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: Stripe settlement transfer from studio web store and print sales.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - STRIPE *TRANSFER STR-98214
+  - STRIPE PAYOUT BANK
+  negative_examples:
+  - STRIPE FEE
+  - STRIPE SOFTWARE
+- rule_id: INC_SQUARE_PAYOUT
+  pattern: \b(SQUAREUP\s*\*?\s*PAYOUT|SQUARE\s*\*?\s*PAYOUT)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: Square point-of-sale proceeds from book fairs and gallery print pop-ups.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - SQUAREUP *PAYOUT 4819
+  - SQUARE PAYOUT BANK
+  negative_examples:
+  - SQUARE PROCESSING FEE
+  - SQUARE RESTAURANT
+- rule_id: INC_PIXIESET_PAYOUT
+  pattern: \b(PIXIESET\s*\*?\s*(?:PRINT\s*)?STORE\s*PAYOUT)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: Pixieset client gallery print order fulfillment payout.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - PIXIESET *STORE PAYOUT
+  - PIXIESET PRINT STORE PAYOUT
+  negative_examples:
+  - PIXIESET SUBSCRIPTION
+  - PHOTO LAB
+- rule_id: INC_SHOOTPROOF_PAYOUT
+  pattern: \b(SHOOTPROOF\s*\*?\s*PAYOUT)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: ShootProof gallery print sales and high-res download royalties.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - SHOOTPROOF *PAYOUT 8419
+  - SHOOTPROOF PAYOUT DIRECT
+  negative_examples:
+  - SHOOTPROOF PRO PLAN
+  - PHOTO STUDIO
+- rule_id: INC_PICTIME_PAYOUT
+  pattern: \b(PIC-TIME\s*\*?\s*PAYOUT|PICTIME\s*\*?\s*PAYOUT)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: Pic-Time automated print store revenue and digital sales earnings.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - PIC-TIME *PAYOUT 9812
+  - PICTIME PAYOUT BANK
+  negative_examples:
+  - PIC-TIME SUBSCRIPTION
+  - CAMERA TIME
+- rule_id: INC_SHOPIFY_PAYOUT
+  pattern: \b(SHOPIFY\s*\*?\s*PAYOUT)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: Shopify monograph, print edition, and studio merchandise settlement.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - SHOPIFY *PAYOUT 84920
+  - SHOPIFY PAYOUT DIRECT
+  negative_examples:
+  - SHOPIFY MONTHLY SUB
+  - SHOPPING STORE
+- rule_id: INC_ETSY_PAYOUT
+  pattern: \b(ETSY\s*\*?\s*PAYOUT|ETSY\s*\*?\s*TRANSFER)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: Etsy art print and vintage camera accessories direct deposit payout.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - ETSY *PAYOUT 98124
+  - ETSY TRANSFER DIRECT
+  negative_examples:
+  - ETSY PURCHASE
+  - GROCERY
+- rule_id: INC_GUMROAD
+  pattern: \b(GUMROAD\s*\*?\s*PAYOUT)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: Gumroad Lightroom preset pack and educational zine digital payouts.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - GUMROAD *PAYOUT 48194
+  - GUMROAD PAYOUT BANK
+  negative_examples:
+  - GUM STORE
+  - SWEET SHOP
+- rule_id: INC_SUBSTACK_PAYOUT
+  pattern: \b(SUBSTACK\s*\*?\s*PAYOUT)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: Substack paid photography subscriber monograph newsletter royalties.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - SUBSTACK *PAYOUT 8419
+  - SUBSTACK PAYOUT DIRECT
+  negative_examples:
+  - SUBSTACK MARKETING FEE
+  - SUBWAY SANDWICH
+- rule_id: INC_KICKSTARTER
+  pattern: \b(KICKSTARTER\s*\*?\s*PAYOUT)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: Kickstarter crowdfunded photobook print production backers payout.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - KICKSTARTER *PAYOUT MONOGRAPH
+  - KICKSTARTER PAYOUT BANK
+  negative_examples:
+  - KICKSTARTER PLEDGE
+  - RESTAURANT
+- rule_id: INC_BLURB_ROYALTY
+  pattern: \b(BLURB\s*\*?\s*(?:AUTHOR\s*)?ROYALTY)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: Blurb author royalties earned from third-party monograph retail sales.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - BLURB *AUTHOR ROYALTY 981
+  - BLURB ROYALTY DIRECT
+  negative_examples:
+  - BLURB *BOOK PRINT RUN
+  - PRINT SHOP
+- rule_id: INC_INGRAM_ROYALTY
+  pattern: \b(INGRAM\s*CONTENT\s*ROYALTY|INGRAMSPARK\s*ROYALTY)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: Ingram Content international book distribution sales royalties.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - INGRAM CONTENT ROYALTY ACH
+  - INGRAMSPARK ROYALTY DEPOSIT
+  negative_examples:
+  - INGRAMSPARK PRINT RUN
+  - BOOK STORE
+- rule_id: INC_CONDE_NAST
+  pattern: "\\b(COND[E\xC9]\\s*NAST\\s*AP|COND[E\xC9]\\s*NAST\\s*EDITORIAL)\\b"
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: Conde Nast magazine editorial photography assignment direct deposit.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - CONDE NAST AP DIRECT DEP
+  - "COND\xC9 NAST EDITORIAL FEE"
+  negative_examples:
+  - MAGAZINE STAND
+  - UBER TRIP
+- rule_id: INC_VOGUE
+  pattern: \b(VOGUE\s*EDITORIAL\s*FEE|VOGUE\s*PAYOUT)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: Vogue fashion editorial photography commission remittance.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - VOGUE EDITORIAL FEE ACH
+  - VOGUE PAYOUT DIRECT
+  negative_examples:
+  - VOGUE CAFE
+  - CLOTHING SHOP
+- rule_id: INC_HARPERCOLLINS
+  pattern: \b(HARPERCOLLINS\s*PHOTO|HARPER\s*COLLINS\s*ROYALTY)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: HarperCollins Publishers book cover licensing and image commission.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - HARPERCOLLINS PHOTO ADVANCE
+  - HARPER COLLINS ROYALTY ACH
+  negative_examples:
+  - BARNES NOBLE
+  - AIRLINE TRIP
+- rule_id: INC_CHRONICLE
+  pattern: \b(CHRONICLE\s*BOOKS\s*ROYALTY)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.97
+  explanation: Chronicle Books photo monograph publishing advance and quarterly royalty.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - CHRONICLE BOOKS ROYALTY DEPOSIT
+  - CHRONICLE BOOKS ROYALTY ACH
+  negative_examples:
+  - CHRONICLE NEWSPAPER
+  - COFFEE SHOP
+- rule_id: INC_CHECK_CLIENT
+  pattern: \b(CHECK\s*DEPOSIT\s*CLIENT|MOBILE\s*DEP\s*CLIENT)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.96
+  explanation: Commercial client photography shoot commission deposit check.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+  - CHECK DEPOSIT CLIENT RETAINER
+  - MOBILE DEP CLIENT INVOICE
+  negative_examples:
+  - CHECK DEPOSIT REFUND
+  - ATM WITHDRAWAL
+- rule_id: LABOR_PHOTO_ASSISTANT
+  pattern: \b(PHOTO\s*ASSISTANT(?:\s*DAY\s*RATE)?|FIRST\s*ASSISTANT\s*FEE)\b
+  category: Contract Labor & Assistants
+  base_confidence: 0.95
+  explanation: Contract labor 1099 photo assistant day rate and lighting tech (Line
+    11).
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PHOTO ASSISTANT DAY RATE NYC
+  - FIRST ASSISTANT FEE SHOOT
+  negative_examples:
+  - PHOTO STUDIO
+  - CAMERA STORE
+- rule_id: LABOR_SECOND_SHOOTER
+  pattern: \b(SECOND\s*SHOOTER(?:\s*FEE)?|2ND\s*SHOOTER)\b
+  category: Contract Labor & Assistants
+  base_confidence: 0.95
+  explanation: Independent contractor second photographer day rate for multi-angle
+    shoots (Line 11).
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - SECOND SHOOTER DAY RATE
+  - 2ND SHOOTER EDITORIAL ASSIGNMENT
+  negative_examples:
+  - GUN SHOOTING RANGE
+  - SHOOTING STAR CAFE
+- rule_id: LABOR_DIGI_TECH
+  pattern: \b(DIGITAL\s*TECH(?:\s*DAY\s*RATE)?|DIGI\s*TECH\s*FEE)\b
+  category: Contract Labor & Assistants
+  base_confidence: 0.95
+  explanation: Digital tech contractor tethered workflow, backup, and color operator
+    (Line 11).
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - DIGITAL TECH DAY RATE SOHO
+  - DIGI TECH FEE SHOOT
+  negative_examples:
+  - DIGITAL CAMERA
+  - TECH SUPPORT
+- rule_id: LABOR_RETOUCHER
+  pattern: \b(RETOUCHER\s*(?:INVOICE|FEE|DAY\s*RATE)|COLOR\s*GRADER\s*FEE)\b
+  category: Contract Labor & Assistants
+  base_confidence: 0.95
+  explanation: Independent freelance retoucher and colorist contract labor fees (Line
+    11).
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - RETOUCHER INVOICE EDITORIAL
+  - COLOR GRADER FEE FILM
+  negative_examples:
+  - TOUCHUP CAFE
+  - PHOTOSHOP SUB
+- rule_id: LABOR_STYLIST
+  pattern: \b(WARDROBE\s*STYLIST|PROP\s*STYLIST\s*DAY\s*RATE)\b
+  category: Contract Labor & Assistants
+  base_confidence: 0.95
+  explanation: Freelance wardrobe or prop stylist creative contractor day rate (Line
+    11).
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - WARDROBE STYLIST DAY RATE
+  - PROP STYLIST DAY RATE NYC
+  negative_examples:
+  - HAIR STYLIST SALON
+  - STYLE CLOTHING
+- rule_id: LABOR_HMUA
+  pattern: \b(HAIR\s*MAKEUP\s*ARTIST|HMUA\s*DAY\s*RATE)\b
+  category: Contract Labor & Assistants
+  base_confidence: 0.95
+  explanation: Hair & makeup artist (HMUA) contractor fee for editorial models (Line
+    11).
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - HAIR MAKEUP ARTIST DAY RATE
+  - HMUA DAY RATE EDITORIAL
+  negative_examples:
+  - HAIR SALON PERSONAL
+  - MAKEUP COSMETICS
+- rule_id: LABOR_PROD_ASSISTANT
+  pattern: \b(PRODUCTION\s*ASSISTANT(?:\s*RATE)?|PA\s*DAY\s*RATE\s*SHOOT)\b
+  category: Contract Labor & Assistants
+  base_confidence: 0.95
+  explanation: On-set production assistant (PA) contract day rate for shoot support
+    (Line 11).
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+  - PRODUCTION ASSISTANT RATE NYC
+  - PA DAY RATE SHOOT COMMERCIAL
+  negative_examples:
+  - PRODUCTION COMPANY
+  - ASSISTANT PRINCIPAL

@@ -1,0 +1,42 @@
+- rule_id: XFER_AUTOPAY
+  pattern: \b(AUTOMATIC PAYMENT(?:\s*-\s*THANK YOU)?|AUTOPAY|PAYMENT THANK YOU|MOBILE PYMT|CREDIT CRD EPAY|CREDIT CARD EPAY|ONLINE PAYMENT THANK YOU|(?:AMEX|CHASE|CITI|DISCOVER|CAPITAL\s*ONE)\s+EPAYMENT(?:\s+ACH|\s+PMT|\s+PAYMENT)?)\b|^(?:EPAYMENT|CREDIT CARD EPAYMENT)(?:\s*-\s*THANK YOU)?$
+  category: Non-Deductible / Transfer
+  base_confidence: 0.98
+  explanation: Credit card balance payment — internal liability settlement, not a deductible expense or taxable income.
+  default_type: transfer
+  tax_flag: INTERNAL_TRANSFER
+  positive_examples:
+    - AUTOMATIC PAYMENT - THANK YOU
+    - CHASE CREDIT CARD AUTOPAY
+    - AMEX EPAYMENT ACH PMT
+  negative_examples:
+    - ADOBE SUBSCRIPTION PAYMENT
+    - B&H PHOTO EQUIPMENT
+
+- rule_id: XFER_SAVINGS_DRAW
+  pattern: \b(TRANSFER TO SAVINGS|TRANSFER FROM SAVINGS|TRANSFER TO CHECKING|TRANSFER FROM CHECKING|TRANSFER (?:TO|FROM) OWN ACCOUNT|ACH TRANSFER TO SELF|OWNER DRAW|MEMBER DRAW|ZELLE TO SELF)\b
+  category: Non-Deductible / Transfer
+  base_confidence: 0.97
+  explanation: Internal account transfer or owner draw — movement between own accounts does not affect Schedule C net profit.
+  default_type: transfer
+  tax_flag: INTERNAL_TRANSFER
+  positive_examples:
+    - ONLINE TRANSFER TO SAVINGS
+    - OWNER DRAW ACH TRANSFER TO SELF
+  negative_examples:
+    - ONLINE TRANSFER TO JOHN DOE
+    - SAVINGS BANK MONTHLY FEE
+
+- rule_id: XFER_TAX_PAYMENT
+  pattern: \b(IRS\s*USATAXPYMT|EFTPS|FRANCHISE TAX BOARD|NYS DTF PIT)\b
+  category: Non-Deductible / Transfer
+  base_confidence: 0.95
+  explanation: Federal/state estimated income tax payment — personal tax remittance is non-deductible on Schedule C.
+  default_type: transfer
+  tax_flag: INTERNAL_TRANSFER
+  positive_examples:
+    - IRS USATAXPYMT 2024 ESTIMATED
+    - EFTPS TAX PAYMENT
+  negative_examples:
+    - NYC FILM PERMIT
+    - US COPYRIGHT OFFICE

@@ -1,0 +1,272 @@
+Date,Description,Amount,Expected_Category,Expected_Type
+2025-01-05,B&H PHOTO 800-606-6969 NY,-3299.0,Camera Equipment & Lighting,expense
+2025-01-08,ADORAMA CAMERA NYC NY,-1450.0,Camera Equipment & Lighting,expense
+2025-01-12,SAMYS CAMERA LOS ANGELES CA,-850.0,Camera Equipment & Lighting,expense
+2025-01-15,KEH CAMERA SMYRNA GA,-420.0,Camera Equipment & Lighting,expense
+2025-01-19,MPB.COM BROOKLYN NY,-650.0,Camera Equipment & Lighting,expense
+2025-01-22,LEICA STORE NYC SOHO,-4995.0,Camera Equipment & Lighting,expense
+2025-01-25,PROFOTO USA COMMERCE,-1895.0,Camera Equipment & Lighting,expense
+2025-01-28,GODOX PHOTO EQUIPMENT,-380.0,Camera Equipment & Lighting,expense
+2025-02-01,APUTURE LIGHTING STORE,-799.0,Camera Equipment & Lighting,expense
+2025-02-04,NANLITE USA DIRECT,-420.0,Camera Equipment & Lighting,expense
+2025-02-06,ELINCHROM USA DISTRIB,-1250.0,Camera Equipment & Lighting,expense
+2025-02-09,BRONCOLOR USA SALES,-2800.0,Camera Equipment & Lighting,expense
+2025-02-12,MANFROTTO DISTRIBUTION,-249.0,Camera Equipment & Lighting,expense
+2025-02-15,GITZO TRIPODS USA,-899.0,Camera Equipment & Lighting,expense
+2025-02-18,REALLY RIGHT STUFF LLC,-385.0,Camera Equipment & Lighting,expense
+2025-02-21,SMALLRIG ONLINE STORE,-145.0,Camera Equipment & Lighting,expense
+2025-02-24,PEAK DESIGN SAN FRANCISCO,-299.95,Camera Equipment & Lighting,expense
+2025-02-27,DJI OFFICIAL STORE,-849.0,Camera Equipment & Lighting,expense
+2025-03-02,RODE MICROPHONES USA,-299.0,Camera Equipment & Lighting,expense
+2025-03-05,ATOMOS NINJA V MONITOR,-699.0,Camera Equipment & Lighting,expense
+2025-03-08,BLACKMAGIC DESIGN INC,-1295.0,Camera Equipment & Lighting,expense
+2025-03-11,PELICAN PRODUCTS INC,-340.0,Camera Equipment & Lighting,expense
+2025-03-14,THINK TANK PHOTO SANTA ROSA,-285.0,Camera Equipment & Lighting,expense
+2025-03-17,TETHER TOOLS PHOENIX AZ,-89.95,Camera Equipment & Lighting,expense
+2025-03-20,SEKONIC METERS USA,-459.0,Camera Equipment & Lighting,expense
+2025-03-23,MATTHEWS STUDIO EQUIPMENT BURBANK,-320.0,Camera Equipment & Lighting,expense
+2025-03-26,SAVAGE UNIVERSAL PHOENIX,-145.0,Camera Equipment & Lighting,expense
+2025-03-29,CANON USA ONLINE STORE,-2499.0,Camera Equipment & Lighting,expense
+2025-04-01,SONY PRO DIRECT STORE,-2798.0,Camera Equipment & Lighting,expense
+2025-04-04,NIKON USA STORE,-2199.0,Camera Equipment & Lighting,expense
+2025-04-07,FUJIFILM NORTH AMERICA,-1699.0,Camera Equipment & Lighting,expense
+2025-04-10,HASSELBLAD USA NJ,-6500.0,Camera Equipment & Lighting,expense
+2025-04-13,SIGMA PHOTO USA,-899.0,Camera Equipment & Lighting,expense
+2025-04-16,TAMRON USA DIRECT,-749.0,Camera Equipment & Lighting,expense
+2025-04-19,ZEISS PHOTOGRAPHY LENSES,-1490.0,Camera Equipment & Lighting,expense
+2025-04-22,PAUL C BUFF INC,-540.0,Camera Equipment & Lighting,expense
+2025-04-25,FOTO CARE NYC STORE,-380.0,Camera Equipment & Lighting,expense
+2025-04-28,PRO PHOTO SUPPLY PORTLAND,-195.0,Camera Equipment & Lighting,expense
+2025-05-01,B&H PHOTO RETURN,149.0,Camera Equipment & Lighting,refund
+2025-05-04,ADORAMA DEFECT CREDIT,89.0,Camera Equipment & Lighting,refund
+2025-01-07,LENSRENTALS.COM 901-754-9100 TN,-485.0,Gear & Lens Rentals,expense
+2025-01-14,BORROWLENSES.COM SAN CARLOS,-360.0,Gear & Lens Rentals,expense
+2025-01-21,SHAREGRID INC LOS ANGELES,-275.0,Gear & Lens Rentals,expense
+2025-01-27,KITSPLIT INC BROOKLYN NY,-190.0,Gear & Lens Rentals,expense
+2025-02-03,CSI RENTALS NYC 212-941-8696,-620.0,Gear & Lens Rentals,expense
+2025-02-10,ADORAMA RENTAL CO NYC,-540.0,Gear & Lens Rentals,expense
+2025-02-17,SAMYS RENTAL DEPT LA,-410.0,Gear & Lens Rentals,expense
+2025-02-23,FOTOCARE RENTAL NYC,-380.0,Gear & Lens Rentals,expense
+2025-03-01,MILK EQUIPMENT RENTAL NYC,-850.0,Gear & Lens Rentals,expense
+2025-03-07,SCHEIMPFLUG EQUIPMENT RENTAL,-920.0,Gear & Lens Rentals,expense
+2025-03-13,HAND HELD FILMS NYC,-780.0,Gear & Lens Rentals,expense
+2025-03-19,KESLOW CAMERA CULVER CITY,-1450.0,Gear & Lens Rentals,expense
+2025-03-25,OTTO NEMENZ HOLLYWOOD,-1800.0,Gear & Lens Rentals,expense
+2025-04-02,LENSRENTALS.COM DEPOSIT RETURN,150.0,Gear & Lens Rentals,refund
+2025-04-08,CSI RENTALS DAMAGE DEPOSIT RET,200.0,Gear & Lens Rentals,refund
+2025-04-15,BORROWLENSES CREDIT REVERSAL,75.0,Gear & Lens Rentals,refund
+2025-01-09,BLURB *BOOK PRINT RUN SF,-1420.5,Photobook Printing & Lab COGS,expense
+2025-01-16,ARTIFACT UPRISING DENVER,-385.0,Photobook Printing & Lab COGS,expense
+2025-01-23,PRINTIQUE BY ADORAMA BROOKLYN,-450.0,Photobook Printing & Lab COGS,expense
+2025-01-30,SAAL DIGITAL CORP USA,-680.0,Photobook Printing & Lab COGS,expense
+2025-02-05,INDIE FILM LAB MONTGOMERY AL,-284.0,Photobook Printing & Lab COGS,expense
+2025-02-11,THEDARKROOM.COM SAN CLEMENTE,-165.0,Photobook Printing & Lab COGS,expense
+2025-02-16,RICHARD PHOTO LAB VALENCIA CA,-340.0,Photobook Printing & Lab COGS,expense
+2025-02-22,BAY PHOTO LAB SOQUEL CA,-520.0,Photobook Printing & Lab COGS,expense
+2025-02-28,WHITEWALL LAB NEW YORK,-890.0,Photobook Printing & Lab COGS,expense
+2025-03-04,MILLERS PRO IMAGING PITTSBURG KS,-415.0,Photobook Printing & Lab COGS,expense
+2025-03-10,LOXLEY COLOUR LAB GLASGOW,-640.0,Photobook Printing & Lab COGS,expense
+2025-03-16,FOLIO ALBUMS UK DIRECT,-780.0,Photobook Printing & Lab COGS,expense
+2025-03-22,EDITION ONE BOOKS BERKELEY CA,-2450.0,Photobook Printing & Lab COGS,expense
+2025-03-27,CONVEYOR STUDIO BROOKLYN,-1200.0,Photobook Printing & Lab COGS,expense
+2025-04-03,SCHUBERT ARCHIVAL BINDERY LLC,-850.0,Photobook Printing & Lab COGS,expense
+2025-04-09,BOOKBABY PENNSAUKEN NJ,-1890.0,Photobook Printing & Lab COGS,expense
+2025-04-14,MIXAM PRINT SCHAUMBURG IL,-420.0,Photobook Printing & Lab COGS,expense
+2025-04-20,HEMLOCK PRINTERS BURNABY,-3200.0,Photobook Printing & Lab COGS,expense
+2025-04-26,WHCC EAGAN MN,-390.0,Photobook Printing & Lab COGS,expense
+2025-05-02,HAHNEMUHLE USA DIRECT,-460.0,Photobook Printing & Lab COGS,expense
+2025-05-07,ILFORD PHOTO PAPER UK,-280.0,Photobook Printing & Lab COGS,expense
+2025-05-12,KODAK ALARIS ROCHESTER,-540.0,Photobook Printing & Lab COGS,expense
+2025-05-18,MOAB PAPER COMPANY NY,-310.0,Photobook Printing & Lab COGS,expense
+2025-05-23,BLURB *DEFECT CREDIT,180.0,Photobook Printing & Lab COGS,refund
+2025-05-28,BAY PHOTO LAB OVERPAYMENT RET,65.0,Photobook Printing & Lab COGS,refund
+2025-01-10,ADOBE *PHOTOGRAPHY PLAN,-59.99,Software & Digital Workflow,expense
+2025-01-17,CAPTURE ONE COPENHAGEN,-29.0,Software & Digital Workflow,expense
+2025-01-24,CAMERA BITS INC HILLSBORO,-229.0,Software & Digital Workflow,expense
+2025-01-31,DXO LABS BOULOGNE,-149.0,Software & Digital Workflow,expense
+2025-02-07,TOPAZ LABS DALLAS TX,-199.0,Software & Digital Workflow,expense
+2025-02-14,IMAGEN AI SUBSCRIPTION,-45.0,Software & Digital Workflow,expense
+2025-02-20,FRAME.IO NEW YORK NY,-35.0,Software & Digital Workflow,expense
+2025-02-26,DROPBOX*9J2K9SAN FRANCISCO,-19.99,Software & Digital Workflow,expense
+2025-03-03,GOOGLE *WORKSPACE CC,-18.0,Software & Digital Workflow,expense
+2025-03-09,MICROSOFT*365 SUBSCRIPTION,-12.99,Software & Digital Workflow,expense
+2025-03-15,NOTION LABS INC SAN FRANCISCO,-10.0,Software & Digital Workflow,expense
+2025-03-21,SLACK TECHNOLOGIES INC SF,-12.5,Software & Digital Workflow,expense
+2025-03-28,ZOOM.US SAN JOSE CA,-14.99,Software & Digital Workflow,expense
+2025-04-05,FIGMA INC SAN FRANCISCO,-15.0,Software & Digital Workflow,expense
+2025-04-11,CANVA PTY LTD SYDNEY,-12.99,Software & Digital Workflow,expense
+2025-04-17,ASANA INC SAN FRANCISCO,-24.99,Software & Digital Workflow,expense
+2025-04-23,BACKBLAZE INC SAN MATEO,-9.0,Software & Digital Workflow,expense
+2025-04-29,1PASSWORD TORONTO ON,-7.99,Software & Digital Workflow,expense
+2025-05-05,SETAPP INC DUBLIN IE,-9.99,Software & Digital Workflow,expense
+2025-05-11,INTUIT *QUICKBOOKS MT VIEW CA,-60.0,Software & Digital Workflow,expense
+2025-05-16,DUBSADO BURBANK CA,-40.0,Software & Digital Workflow,expense
+2025-05-22,17HATS LOS ANGELES CA,-35.0,Software & Digital Workflow,expense
+2025-01-11,PEERSPACE INC SAN FRANCISCO,-650.0,"Studio, Darkroom & Permits",expense
+2025-01-18,SPLACER NEW YORK NY,-800.0,"Studio, Darkroom & Permits",expense
+2025-01-26,GIGGSTER SANTA MONICA CA,-550.0,"Studio, Darkroom & Permits",expense
+2025-02-02,FD PHOTO STUDIO LOS ANGELES,-320.0,"Studio, Darkroom & Permits",expense
+2025-02-08,BROOKLYN DARKROOM NY,-180.0,"Studio, Darkroom & Permits",expense
+2025-02-15,GOWANUS DARKROOM BROOKLYN,-150.0,"Studio, Darkroom & Permits",expense
+2025-02-21,BUSHWICK COMMUNITY DARKROOM BK,-125.0,"Studio, Darkroom & Permits",expense
+2025-03-01,LIGHTSPACE STUDIO BROOKLYN,-450.0,"Studio, Darkroom & Permits",expense
+2025-03-08,MILK STUDIOS NYC VENUE,-1800.0,"Studio, Darkroom & Permits",expense
+2025-03-15,NYC PARKS PERMIT FILM DEPT,-300.0,"Studio, Darkroom & Permits",expense
+2025-03-22,NYC FILM PERMIT MOME,-300.0,"Studio, Darkroom & Permits",expense
+2025-03-29,FILMLA INC HOLLYWOOD,-450.0,"Studio, Darkroom & Permits",expense
+2025-04-06,NPS *SPECIAL USE PERMIT,-250.0,"Studio, Darkroom & Permits",expense
+2025-04-12,WEWORK BROOKLYN NY,-350.0,"Studio, Darkroom & Permits",expense
+2025-04-18,PUBLIC STORAGE GLENDALE CA,-185.0,"Studio, Darkroom & Permits",expense
+2025-01-13,DELTA AIRLINES ATLANTA GA,-485.2,Shoot Travel & Transport,expense
+2025-01-20,UNITED AIRLINES CHICAGO IL,-390.4,Shoot Travel & Transport,expense
+2025-01-25,AMERICAN AIRLINES DALLAS TX,-425.6,Shoot Travel & Transport,expense
+2025-02-01,SOUTHWEST AIRLINES DALLAS,-340.5,Shoot Travel & Transport,expense
+2025-02-07,JETBLUE AIRWAYS LONG ISLAND,-298.1,Shoot Travel & Transport,expense
+2025-02-13,ALASKA AIRLINES SEATTLE WA,-315.8,Shoot Travel & Transport,expense
+2025-02-19,AMTRAK NYP WASHINGTON DC,-164.0,Shoot Travel & Transport,expense
+2025-02-25,UBER *TRIP 9821 SAN FRANCISCO,-42.5,Shoot Travel & Transport,expense
+2025-03-02,LYFT *RIDE MON 4PM,-38.2,Shoot Travel & Transport,expense
+2025-03-06,CURB TAXI NEW YORK NY,-28.75,Shoot Travel & Transport,expense
+2025-03-12,MTA*NYCT PAYGO NEW YORK,-2.9,Shoot Travel & Transport,expense
+2025-03-18,SPOTHERO CHICAGO IL,-35.0,Shoot Travel & Transport,expense
+2025-03-24,ICON PARKING NEW YORK NY,-65.0,Shoot Travel & Transport,expense
+2025-03-30,EZPASS NY CSC REPLENISH,-50.0,Shoot Travel & Transport,expense
+2025-04-05,HERTZ RENT A CAR LAX,-310.45,Shoot Travel & Transport,expense
+2025-04-11,ENTERPRISE RENT-A-CAR NYC,-285.0,Shoot Travel & Transport,expense
+2025-04-17,AIRBNB *HM9821SAN FRANCISCO,-620.0,Shoot Travel & Transport,expense
+2025-04-22,MARRIOTT HOTELS DALLAS TX,-445.0,Shoot Travel & Transport,expense
+2025-04-27,HILTON HOTELS CHICAGO,-385.0,Shoot Travel & Transport,expense
+2025-05-03,ACE HOTEL BROOKLYN NY,-520.0,Shoot Travel & Transport,expense
+2025-01-15,USPS PO 3582910 BROOKLYN,-48.2,Shipping & Book Fulfillment,expense
+2025-01-22,USPS.COM POSTAGE CLICKNSHIP,-32.5,Shipping & Book Fulfillment,expense
+2025-01-29,UPS STORE #1048 NEW YORK NY,-78.4,Shipping & Book Fulfillment,expense
+2025-02-05,UPS BILLING CENTER ATLANTA,-145.2,Shipping & Book Fulfillment,expense
+2025-02-12,FEDEX EXPRESS MEMPHIS TN,-64.8,Shipping & Book Fulfillment,expense
+2025-02-18,FEDEX OFFICE #0492 NYC,-42.1,Shipping & Book Fulfillment,expense
+2025-02-24,DHL EXPRESS PLANTATION FL,-128.5,Shipping & Book Fulfillment,expense
+2025-03-02,PIRATESHIP GREEN BAY WI,-85.6,Shipping & Book Fulfillment,expense
+2025-03-09,SHIPSTATION AUSTIN TX,-29.99,Shipping & Book Fulfillment,expense
+2025-03-16,STAMPS.COM EL SEGUNDO CA,-19.99,Shipping & Book Fulfillment,expense
+2025-03-23,ULINE SHIPPING SUPPLIES WI,-265.4,Shipping & Book Fulfillment,expense
+2025-03-30,ECOENCLOSE LOUISVILLE CO,-184.2,Shipping & Book Fulfillment,expense
+2025-04-06,CLEARHARMONY PACKAGING NY,-95.0,Shipping & Book Fulfillment,expense
+2025-04-13,GAYLORD ARCHIVAL SYRACUSE NY,-140.0,Shipping & Book Fulfillment,expense
+2025-01-16,STRAND BOOK STORE 828 BROADWAY NY,-195.0,"Props, Styling & Reference Books",expense
+2025-01-24,PRINTED MATTER NYC CHELSEA,-145.0,"Props, Styling & Reference Books",expense
+2025-01-31,DASHWOOD BOOKS NEW YORK NY,-120.0,"Props, Styling & Reference Books",expense
+2025-02-06,ARCANA BOOKS CULVER CITY CA,-240.0,"Props, Styling & Reference Books",expense
+2025-02-14,POWELLS BOOKS PORTLAND OR,-85.0,"Props, Styling & Reference Books",expense
+2025-02-20,KINOKUNIYA BOOK STORES NY,-110.0,"Props, Styling & Reference Books",expense
+2025-02-27,MCNALLY JACKSON BOOKS NYC,-74.5,"Props, Styling & Reference Books",expense
+2025-03-05,APERTURE FOUNDATION NY,-160.0,"Props, Styling & Reference Books",expense
+2025-03-12,TASCHEN STORE NEW YORK,-225.0,"Props, Styling & Reference Books",expense
+2025-03-19,STEIDL VERLAG GOTTINGEN,-180.0,"Props, Styling & Reference Books",expense
+2025-03-26,MACK BOOKS LONDON,-135.0,"Props, Styling & Reference Books",expense
+2025-04-02,PROP WORKSHOP NYC,-280.0,"Props, Styling & Reference Books",expense
+2025-04-08,MOOD FABRICS NYC 212-730-5003,-165.0,"Props, Styling & Reference Books",expense
+2025-04-15,B&J FABRICS NEW YORK NY,-190.0,"Props, Styling & Reference Books",expense
+2025-01-18,EZCATER*SHOOT CREW LUNCH,-240.0,Client & Crew Meals (50%),expense
+2025-01-26,PANERA CATERING ORDER #481,-185.0,Client & Crew Meals (50%),expense
+2025-02-03,SWEETGREEN CATERING NYC,-165.0,Client & Crew Meals (50%),expense
+2025-02-11,WHOLE FOODS CATERING NYC,-220.0,Client & Crew Meals (50%),expense
+2025-02-19,SEAMLESS CORPORATE CATERING,-145.0,Client & Crew Meals (50%),expense
+2025-02-27,GRUBHUB CORPORATE ORDERS,-175.0,Client & Crew Meals (50%),expense
+2025-03-07,DOORDASH*CREW LUNCH DOWNTOWN,-190.0,Client & Crew Meals (50%),expense
+2025-03-15,JOES PIZZA CATERING NYC,-120.0,Client & Crew Meals (50%),expense
+2025-01-19,META PLATFORMS *ADS10482,-150.0,"Marketing, Book Fairs & Portfolio",expense
+2025-01-27,FACEBK *ADS928194,-120.0,"Marketing, Book Fairs & Portfolio",expense
+2025-02-04,GOOGLE *ADS9481920,-200.0,"Marketing, Book Fairs & Portfolio",expense
+2025-02-12,PINTEREST *ADS48291,-75.0,"Marketing, Book Fairs & Portfolio",expense
+2025-02-18,LINKEDIN *ADS84910,-95.0,"Marketing, Book Fairs & Portfolio",expense
+2025-02-26,NY ART BOOK FAIR BOOTH FEE,-750.0,"Marketing, Book Fairs & Portfolio",expense
+2025-03-04,LA ART BOOK FAIR TABLE,-650.0,"Marketing, Book Fairs & Portfolio",expense
+2025-03-11,PARIS PHOTO BOOTH REGISTRATION,-1400.0,"Marketing, Book Fairs & Portfolio",expense
+2025-03-18,POLYCOPIES PARIS TABLE FEE,-480.0,"Marketing, Book Fairs & Portfolio",expense
+2025-03-25,PRINTED MATTER FAIR BOOTH,-500.0,"Marketing, Book Fairs & Portfolio",expense
+2025-04-01,MOO.COM PROMO CARDS,-88.5,"Marketing, Book Fairs & Portfolio",expense
+2025-04-07,VISTAPRINT CAMPAIGN SIGNS,-65.0,"Marketing, Book Fairs & Portfolio",expense
+2025-04-14,MAILCHIMP MONTHLY ATLANTA,-35.0,"Marketing, Book Fairs & Portfolio",expense
+2025-04-21,SQUARESPACE INC NEW YORK,-26.0,"Marketing, Book Fairs & Portfolio",expense
+2025-01-21,HISCOX INSURANCE ATLANTA GA,-145.0,"Insurance, Copyright & Guilds",expense
+2025-01-28,ATHOS INSURANCE PASADENA CA,-85.0,"Insurance, Copyright & Guilds",expense
+2025-02-05,TCP*ATHOS GEAR POLICY,-95.0,"Insurance, Copyright & Guilds",expense
+2025-02-13,THIMBLE INSURANCE NYC,-60.0,"Insurance, Copyright & Guilds",expense
+2025-02-21,PPA MEMB ATLANTA GA,-323.0,"Insurance, Copyright & Guilds",expense
+2025-03-01,ASMP MEMB PHILADELPHIA PA,-335.0,"Insurance, Copyright & Guilds",expense
+2025-03-08,APA NATIONAL NEW YORK,-275.0,"Insurance, Copyright & Guilds",expense
+2025-03-16,NPPA MEMB ATHENS GA,-110.0,"Insurance, Copyright & Guilds",expense
+2025-03-23,US COPYRIGHT OFFICE WASHINGTON DC,-65.0,"Insurance, Copyright & Guilds",expense
+2025-03-31,BOWKER ISBN NEW PROVIDENCE NJ,-295.0,"Insurance, Copyright & Guilds",expense
+2025-01-22,STRIPE FEE DEDUCTION,-48.2,Bank & Processing Fees,expense
+2025-01-30,SQUARE PROCESSING FEE,-32.4,Bank & Processing Fees,expense
+2025-02-07,PAYPAL MERCHANT FEE,-24.8,Bank & Processing Fees,expense
+2025-02-15,MERCURY BANK WIRE FEE,-25.0,Bank & Processing Fees,expense
+2025-02-22,CHASE WIRE FEE OUTGOING,-35.0,Bank & Processing Fees,expense
+2025-03-02,AMEX FOREIGN TX FEE,-18.45,Bank & Processing Fees,expense
+2025-03-10,WISE TRANSFER FEE EUR,-14.2,Bank & Processing Fees,expense
+2025-03-18,BREX FEE INT WIRE,-20.0,Bank & Processing Fees,expense
+2025-01-23,PHOTO ASSISTANT DAY RATE NYC,-450.0,Contract Labor & Assistants,expense
+2025-01-31,SECOND SHOOTER DAY RATE,-650.0,Contract Labor & Assistants,expense
+2025-02-08,DIGITAL TECH DAY RATE SOHO,-600.0,Contract Labor & Assistants,expense
+2025-02-16,RETOUCHER INVOICE EDITORIAL,-750.0,Contract Labor & Assistants,expense
+2025-02-24,WARDROBE STYLIST DAY RATE,-550.0,Contract Labor & Assistants,expense
+2025-03-03,HAIR MAKEUP ARTIST DAY RATE,-500.0,Contract Labor & Assistants,expense
+2025-03-11,PRODUCTION ASSISTANT RATE NYC,-300.0,Contract Labor & Assistants,expense
+2025-03-19,FIRST ASSISTANT FEE SHOOT,-450.0,Contract Labor & Assistants,expense
+2025-01-25,HONEYBOOK *PAYOUT 98214,3200.0,Client Shoot & Book Income,income
+2025-02-01,STRIPE *TRANSFER STR-98214,4500.0,Client Shoot & Book Income,income
+2025-02-09,SQUAREUP *PAYOUT 4819,1240.0,Client Shoot & Book Income,income
+2025-02-17,PIXIESET *STORE PAYOUT,890.0,Client Shoot & Book Income,income
+2025-02-25,SHOOTPROOF *PAYOUT 8419,640.0,Client Shoot & Book Income,income
+2025-03-04,PIC-TIME *PAYOUT 9812,1150.0,Client Shoot & Book Income,income
+2025-03-12,SHOPIFY *PAYOUT 84920,2100.0,Client Shoot & Book Income,income
+2025-03-20,ETSY *PAYOUT 98124,580.0,Client Shoot & Book Income,income
+2025-03-28,GUMROAD *PAYOUT 48194,420.0,Client Shoot & Book Income,income
+2025-04-04,KICKSTARTER *PAYOUT MONOGRAPH,8500.0,Client Shoot & Book Income,income
+2025-04-12,BLURB *AUTHOR ROYALTY 981,340.0,Client Shoot & Book Income,income
+2025-04-19,INGRAM CONTENT ROYALTY ACH,620.0,Client Shoot & Book Income,income
+2025-04-26,CONDÉ NAST EDITORIAL FEE,2800.0,Client Shoot & Book Income,income
+2025-05-03,VOGUE EDITORIAL FEE ACH,3500.0,Client Shoot & Book Income,income
+2025-05-10,CHECK DEPOSIT CLIENT RETAINER,2500.0,Client Shoot & Book Income,income
+2025-01-26,AUTOMATIC PAYMENT - THANK YOU,4500.0,Non-Deductible / Transfer,transfer
+2025-02-02,CHASE CREDIT CARD AUTOPAY,3800.0,Non-Deductible / Transfer,transfer
+2025-02-10,ONLINE PAYMENT THANK YOU,2900.0,Non-Deductible / Transfer,transfer
+2025-02-18,ONLINE TRANSFER TO SAVINGS,-2000.0,Non-Deductible / Transfer,transfer
+2025-02-26,ONLINE TRANSFER FROM SAVINGS,1500.0,Non-Deductible / Transfer,transfer
+2025-03-05,OWNER DRAW ACH TRANSFER TO SELF,-3500.0,Non-Deductible / Transfer,transfer
+2025-03-13,MEMBER DRAW TRANSFER,-2500.0,Non-Deductible / Transfer,transfer
+2025-03-21,TRANSFER TO CHECKING,1000.0,Non-Deductible / Transfer,transfer
+2025-03-29,ZELLE TO SELF,-500.0,Non-Deductible / Transfer,transfer
+2025-04-05,IRS USATAXPYMT 2024 ESTIMATED,-1800.0,Non-Deductible / Transfer,transfer
+2025-04-13,EFTPS TAX PAYMENT,-1200.0,Non-Deductible / Transfer,transfer
+2025-04-20,NYS DTF PIT ESTIMATED TAX,-650.0,Non-Deductible / Transfer,transfer
+2025-01-27,AMAZON.COM*MKTPL 8821WA,-142.65,Needs Review,expense
+2025-02-03,AMZN MKTP US SEATTLE WA,-88.4,Needs Review,expense
+2025-02-11,TARGET T-0982 BROOKLYN NY,-74.5,Needs Review,expense
+2025-02-19,WALMART STORE #2841,-92.3,Needs Review,expense
+2025-02-27,COSTCO WHSE #0482,-185.6,Needs Review,expense
+2025-03-06,BEST BUY 000492 SAN JOSE CA,-129.99,Needs Review,expense
+2025-03-14,APPLE.COM/BILL ONE INFINITE,-49.99,Needs Review,expense
+2025-03-22,IKEA BROOKLYN NY,-210.0,Needs Review,expense
+2025-03-30,VENMO *MARCUS VANCE,-250.0,Needs Review,expense
+2025-04-06,PAYPAL *SAMUELPHOTO,-180.0,Needs Review,expense
+2025-04-14,CASH APP*PHOTOASSIST,-150.0,Needs Review,expense
+2025-04-21,JOES CAFE 9921 BROOKLYN NY,-18.75,Needs Review,expense
+2025-04-28,STARBUCKS STORE 10482 NY,-14.25,Needs Review,expense
+2025-05-04,BLUE BOTTLE COFFEE NY,-16.5,Needs Review,expense
+2025-05-11,ATM WITHDRAWAL 8482 CHASE,-200.0,Needs Review,expense
+2025-05-17,CASH WITHDRAWAL BRANCH 01,-150.0,Needs Review,expense
+2025-05-23,SPOTIFY USA MONTHLY,-11.99,Needs Review,expense
+2025-05-29,NETFLIX.COM SUBSCRIPTION,-19.99,Needs Review,expense
+2025-06-03,HULU SUBSCRIPTION MONTHLY,-14.99,Needs Review,expense
+2025-06-08,TRADER JOE'S #542 BROOKLYN NY,-68.4,Needs Review,expense
+2025-06-13,SAFEWAY STORE 1204 SEATTLE WA,-84.2,Needs Review,expense
+2025-06-18,WHOLE FOODS STORE #048,-95.5,Needs Review,expense
+2025-06-22,CHEVRON 0092144 LOS ANGELES CA,-65.0,Needs Review,expense
+2025-06-25,SHELL OIL 12849301 SAN JOSE CA,-58.2,Needs Review,expense
+2025-06-27,ONLINE TRANSFER TO SARAH SMITH,-200.0,Needs Review,expense
+2025-06-28,REFUND TO CLIENT OVERPAYMENT,-350.0,Needs Review,expense
+2025-06-29,UNKNOWN VENDOR DEPOSIT,500.0,Needs Review,income
+2025-06-30,ZXY9918 MYSTERY VENDOR LLC,-88.0,Needs Review,expense
+2025-06-30,EPAYMENT - UNKNOWN SUPPLIER,-120.0,Needs Review,expense
+2025-06-30,MYSTERY HARDWARE STORE,-145.0,Needs Review,expense

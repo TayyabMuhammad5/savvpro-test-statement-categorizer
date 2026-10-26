@@ -163,11 +163,12 @@ class TestStatementCategorizerBrain(unittest.TestCase):
         summary = brain.analyze_statement(csv_data)
 
         self.assertEqual(summary.gross_expenses, 284.00)
-        self.assertEqual(summary.duplicate_or_pending_count, 2)
+        self.assertEqual(summary.duplicate_or_pending_count, 1)
+        self.assertEqual(summary.needs_review_count, 1)
         self.assertEqual(summary.transactions[1].transaction_type, TransactionType.DUPLICATE)
         self.assertTrue(summary.transactions[1].needs_review)
-        self.assertEqual(summary.transactions[2].transaction_type, TransactionType.DUPLICATE)
-        self.assertTrue(summary.transactions[2].needs_review)
+        self.assertEqual(summary.transactions[2].transaction_type, TransactionType.EXCLUDED)
+        self.assertFalse(summary.transactions[2].needs_review)
 
     def test_word_boundary_prevents_substring_false_positives(self) -> None:
         """

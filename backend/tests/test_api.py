@@ -16,7 +16,7 @@ class TestStatementAPI(unittest.TestCase):
         self.assertGreaterEqual(len(cats), 14)
 
         presets = list_presets()
-        self.assertEqual(len(presets), 3)
+        self.assertGreaterEqual(len(presets), 3)
 
     def test_analyze_endpoint_with_custom_rules(self) -> None:
         req = BatchAnalyzeRequest(

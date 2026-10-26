@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from enum import Enum
-from typing import Dict, List, Optional
+from typing import Any, Dict, List, Optional
 from pydantic import BaseModel, Field
 
 
@@ -10,7 +10,8 @@ class TransactionType(str, Enum):
     REFUND = "refund"          # Contra-expense: money returned from a vendor, reduces category expense
     INCOME = "income"          # Client retainers, print store payouts, book royalties
     TRANSFER = "transfer"      # Credit card autopay, transfers to savings, owner draws (non-taxable/non-deductible)
-    DUPLICATE = "duplicate"    # Pending authorization hold or duplicate row excluded from totals
+    DUPLICATE = "duplicate"    # Duplicate row flagged for review
+    EXCLUDED = "excluded"      # Pending authorization hold or user-excluded transaction
 
 
 class TaxCategory(str, Enum):
@@ -26,6 +27,7 @@ class TaxCategory(str, Enum):
     MARKETING_BOOK_FAIRS = "Marketing, Book Fairs & Portfolio"
     INSURANCE_LEGAL = "Insurance, Copyright & Guilds"
     BANK_MERCHANT_FEES = "Bank & Processing Fees"
+    CONTRACT_LABOR = "Contract Labor & Assistants"
     CLIENT_BOOK_INCOME = "Client Shoot & Book Income"
     NON_DEDUCTIBLE_TRANSFER = "Non-Deductible / Transfer"
     PERSONAL_NON_DEDUCTIBLE = "Personal / Non-Deductible"
@@ -50,6 +52,7 @@ class RawTransaction(BaseModel):
     source_format: str = "standard"
     raw_status: Optional[str] = None
     memo: Optional[str] = None
+    bank_category: Optional[str] = None
 
 
 class DecisionSignal(BaseModel):
@@ -69,6 +72,7 @@ class CategorizedTransaction(BaseModel):
     abs_amount: float
     category: TaxCategory
     suggested_categories: List[TaxCategory] = Field(default_factory=list)
+    alternative_reasons: Dict[str, str] = Field(default_factory=dict)
     transaction_type: TransactionType
     confidence: float = Field(ge=0.0, le=1.0)
     needs_review: bool
@@ -97,6 +101,7 @@ class CategorySummary(BaseModel):
 class StatementAnalysisResponse(BaseModel):
     statement_name: str
     detected_bank_format: str
+    sign_convention: str = "auto"
     total_rows: int
     auto_categorized_count: int
     needs_review_count: int
@@ -108,9 +113,16 @@ class StatementAnalysisResponse(BaseModel):
     total_refund_offsets: float
     net_expenses: float
     estimated_deductible_total: float
+    amount_in_review: float = 0.0
+    provisional: bool = False
+    tax_disclaimer: str = (
+        "This report is a deterministic categorization assistant based on IRS Schedule C guidelines for photography studios "
+        "and is not tax advice or legal advice. Consult a certified CPA or tax professional before filing."
+    )
     category_summaries: List[CategorySummary]
     transactions: List[CategorizedTransaction]
     parse_warnings: List[str] = Field(default_factory=list)
+    parse_errors: List[str] = Field(default_factory=list)
 
 
 class ReviewUpdateRequest(BaseModel):
@@ -124,3 +136,6 @@ class BatchAnalyzeRequest(BaseModel):
     statement_name: str = "uploaded_statement.csv"
     csv_content: str
     custom_rules: Dict[str, str] = Field(default_factory=dict)
+    row_decisions: Dict[str, Any] = Field(default_factory=dict)
+    sign_convention: str = "auto"
+

@@ -1,0 +1,83 @@
+- rule_id: KW_CAMERA_LENS
+  pattern: \b(CAMERA|MEDIUM\s*FORMAT|ANALOG\s*FILM|DARKROOM|TRIPOD|STROBE|LIGHTMETER|35MM|120\s*FILM)\b
+  category: Camera Equipment & Lighting
+  base_confidence: 0.80
+  explanation: Matched photography equipment keyword heuristic.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+    - LOCAL CAMERA REPAIR SHOP
+    - VINTAGE 35MM SUPPLIES
+  negative_examples:
+    - STARBUCKS COFFEE
+    - DELTA AIR LINES
+
+- rule_id: KW_BOOKBINDING_PRINT
+  pattern: \b(BOOKBINDING|BINDERY|LITHOGRAPHY|OFFSET\s*PRINT|FINE\s*ART\s*PRINT|ARCHIVAL\s*INK|GICLEE|COLOR\s*PROOF)\b
+  category: Photobook Printing & Lab COGS
+  base_confidence: 0.82
+  explanation: Matched photobook printing / fine-art bindery keyword heuristic.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+    - CUSTOM BOOKBINDING STUDIO
+    - GICLEE ARCHIVAL INK PRINT
+  negative_examples:
+    - BINDERY STREET CAFE
+    - UBER TRIP
+
+- rule_id: KW_STUDIO_PERMIT
+  pattern: \b(PHOTO\s*STUDIO|CYCLORAMA|DAYLIGHT\s*LOFT|LOCATION\s*FEE|FILMING\s*PERMIT)\b
+  category: Studio, Darkroom & Permits
+  base_confidence: 0.81
+  explanation: Matched studio space or location permit keyword heuristic.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+    - DOWNTOWN PHOTO STUDIO RENTAL
+    - MUNICIPAL FILMING PERMIT
+  negative_examples:
+    - STUDIO GHIBLI MERCH
+    - DELTA FLIGHT
+
+- rule_id: KW_SHIPPING
+  pattern: \b(POSTAGE|FREIGHT|COURIER|MAILERS|SHIPPING\s*LABEL)\b
+  category: Shipping & Book Fulfillment
+  base_confidence: 0.78
+  explanation: Matched shipping and fulfillment keyword heuristic.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+    - EXPRESS COURIER SERVICE
+    - RIGID MAILERS BULK
+  negative_examples:
+    - SHIP HARBOR INN
+    - NETFLIX SUBSCRIPTION
+
+- rule_id: KW_HOTEL_AIR
+  pattern: \b(AIRLINES|AIRWAYS|HOTEL|MOTEL|LODGING|PARKING\s*GARAGE|TOLLWAY)\b
+  category: Shoot Travel & Transport
+  base_confidence: 0.79
+  explanation: Matched travel and transport keyword heuristic.
+  default_type: expense
+  tax_flag: NONE
+  positive_examples:
+    - BOUTIQUE HOTEL LODGING
+    - METRO PARKING GARAGE
+  negative_examples:
+    - AIR CONDITIONER REPAIR
+    - CAMERA STORE
+
+- rule_id: KW_CLIENT_INCOME
+  pattern: \b(CLIENT\s*PAYOUT|CLIENT\s*RETAINER|CLIENT\s*ADVANCE|SHOOT\s*DEPOSIT|ROYALTY\s*PAYOUT|BOOK\s*ROYALTIES|PRINT\s*STORE\s*PAYOUT|CLIENT\s*DIRECT\s*DEPOSIT|SEPA\s*CLIENT)\b
+  category: Client Shoot & Book Income
+  base_confidence: 0.88
+  explanation: Matched client shoot or photobook revenue keyword heuristic.
+  default_type: income
+  tax_flag: NONE
+  positive_examples:
+    - INCOMING CLIENT ADVANCE WIRE
+    - WEDDING CLIENT RETAINER DEPOSIT
+  negative_examples:
+    - ADVANCE AUTO PARTS
+    - CLIENT DINING EXPENSE
