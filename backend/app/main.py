@@ -325,8 +325,8 @@ async def upload_statement_file(
     )
 
 
-# Register routes for both /api and /api/v1
-for prefix in ("/api", "/api/v1"):
+# Register routes for root, /api and /api/v1
+for prefix in ("", "/api", "/api/v1"):
     app.add_api_route(f"{prefix}/health", health_check, methods=["GET"])
     app.add_api_route(f"{prefix}/categories", list_categories, methods=["GET"])
     app.add_api_route(f"{prefix}/presets", list_presets, methods=["GET"])
